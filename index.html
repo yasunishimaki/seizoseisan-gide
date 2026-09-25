@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="description" content="学生向けの製造・生産職ガイド（授業用教材）。技術・研究職ではなく、文系学生がつく製造生産の仕事を9職種。現場との距離、業種による違いを動画と1日の流れで比較できます。">
+<title>製造生産職まるわかりナビ｜理系じゃなくても、ものづくりの中心にいられる</title>
+<style>
+:root{
+  --ink:#1f2933; --ink-soft:#52606d; --ink-faint:#7b8794;
+  --paper:#fbfaf7; --card:#ffffff; --line:#e3e0d8;
+  --accent:#1f6f5c; --accent-soft:#e6f2ee; --accent-deep:#14503f;
+  --warm:#c96a3c; --warm-soft:#fbeee6;
+  --blue:#2f5d8c; --blue-soft:#e7eef6;
+  --purple:#6b4f8a; --purple-soft:#efe9f5;
+  --base:16px; --radius:14px;
+  --shadow:0 1px 2px rgba(31,41,51,.05), 0 8px 24px rgba(31,41,51,.06);
+}
+html[data-zoom="big"]{--base:19px;}
+html[data-zoom="huge"]{--base:22px;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:82px;}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Meiryo,sans-serif;
+  font-size:var(--base); line-height:1.85; letter-spacing:.01em;
+}
+img{max-width:100%;}
+a{color:var(--accent-deep);}
+
+.topbar{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.topbar-inner{max-width:1180px;margin:0 auto;padding:.55rem 1.2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:.02em;white-space:nowrap;}
+.brand span{color:var(--accent);}
+.navlinks{display:flex;gap:.15rem;flex-wrap:wrap;flex:1;}
+.navlinks a{text-decoration:none;color:var(--ink-soft);font-size:.82rem;font-weight:600;padding:.35rem .6rem;border-radius:999px;white-space:nowrap;}
+.navlinks a:hover{background:var(--accent-soft);color:var(--accent-deep);}
+.zoomctl{display:flex;align-items:center;gap:.3rem;font-size:.75rem;color:var(--ink-faint);}
+.zoomctl button{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:.22rem .5rem;cursor:pointer;font-size:.78rem;font-weight:700;color:var(--ink-soft);font-family:inherit;}
+.zoomctl button[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.2rem 5rem;}
+section{padding-top:3.2rem;}
+h2{font-size:1.55rem;line-height:1.4;margin:0 0 .3rem;letter-spacing:.01em;display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;}
+h2 .num{font-size:.72rem;font-weight:800;color:var(--accent);background:var(--accent-soft);padding:.2rem .55rem;border-radius:999px;letter-spacing:.08em;}
+.lead{color:var(--ink-soft);margin:.4rem 0 1.6rem;max-width:64ch;}
+h3{font-size:1.12rem;margin:2rem 0 .6rem;}
+
+.hero{padding:3.4rem 0 1rem;}
+.hero .kicker{font-size:.78rem;font-weight:800;letter-spacing:.14em;color:var(--warm);margin-bottom:.7rem;}
+.hero h1{font-size:2.5rem;line-height:1.32;margin:0 0 1rem;letter-spacing:.005em;font-weight:800;}
+.hero h1 em{font-style:normal;color:var(--accent);}
+.hero p{font-size:1.02rem;color:var(--ink-soft);max-width:62ch;margin:0 0 1.4rem;}
+.hero-cta{display:flex;gap:.6rem;flex-wrap:wrap;}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:.9rem;padding:.7rem 1.3rem;border-radius:999px;border:1.5px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer;font-family:inherit;}
+.btn.ghost{background:transparent;color:var(--accent-deep);}
+.btn:hover{filter:brightness(1.08);}
+
+.strip{background:var(--warm-soft);border:1px solid #f0dccf;border-radius:var(--radius);padding:1.4rem 1.5rem;margin-top:2.2rem;}
+.strip h4{margin:0 0 .7rem;font-size:1rem;color:var(--warm);}
+.strip ul{margin:0;padding-left:1.2rem;color:var(--ink-soft);}
+.strip li{margin-bottom:.25rem;}
+.strip .fix{margin-top:1rem;padding-top:.9rem;border-top:1px dashed #e0c4b0;font-weight:700;color:var(--ink);}
+
+.mapgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;}
+.mapcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.3rem;box-shadow:var(--shadow);}
+.mapcard h4{margin:0 0 .2rem;font-size:1rem;}
+.mapcard .who{font-size:.78rem;font-weight:800;letter-spacing:.06em;margin-bottom:.5rem;}
+.mapcard p{margin:0 0 .7rem;font-size:.9rem;color:var(--ink-soft);}
+.mapcard .jobs{display:flex;flex-wrap:wrap;gap:.3rem;}
+.mapcard .jobs span{font-size:.78rem;background:var(--paper);border:1px solid var(--line);padding:.16rem .55rem;border-radius:999px;}
+.m1{border-top:4px solid var(--accent);} .m1 .who{color:var(--accent);}
+.m2{border-top:4px solid var(--blue);} .m2 .who{color:var(--blue);}
+.m3{border-top:4px solid var(--warm);} .m3 .who{color:var(--warm);}
+
+.filters{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1.4rem;}
+.chip{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:.4rem .95rem;font-size:.85rem;font-weight:700;color:var(--ink-soft);cursor:pointer;font-family:inherit;}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+
+.jobs-list{display:flex;flex-direction:column;gap:1.1rem;}
+.job{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;scroll-margin-top:90px;}
+.job.hidden{display:none;}
+.job-head{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.4rem;cursor:pointer;user-select:none;border-left:6px solid var(--accent);}
+.job-head:hover{background:#fcfcfa;}
+.job-badge{flex:none;width:52px;height:52px;border-radius:12px;background:var(--accent-soft);color:var(--accent-deep);display:grid;place-items:center;font-size:1.5rem;}
+.job-titles{flex:1;min-width:0;}
+.job-titles h3{margin:0;font-size:1.22rem;line-height:1.4;}
+.job-titles .catch{color:var(--ink-soft);font-size:.9rem;margin-top:.15rem;}
+.job-tags{display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.5rem;}
+.job-tags span{font-size:.72rem;font-weight:700;padding:.14rem .5rem;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--ink-faint);}
+.toggle{flex:none;align-self:center;font-size:.78rem;font-weight:800;color:var(--accent);display:flex;align-items:center;gap:.3rem;white-space:nowrap;}
+.toggle .arw{transition:transform .2s;display:inline-block;}
+.job[open-state="1"] .toggle .arw{transform:rotate(180deg);}
+.job-body{display:none;padding:0 1.4rem 1.5rem;border-top:1px solid var(--line);}
+.job[open-state="1"] .job-body{display:block;}
+
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:1.6rem;margin-top:1.3rem;}
+@media(max-width:820px){.split{grid-template-columns:1fr;}}
+
+.blk{margin-bottom:1.3rem;}
+.blk h5{margin:0 0 .5rem;font-size:.78rem;font-weight:800;letter-spacing:.09em;color:var(--accent);}
+.blk ul{margin:0;padding-left:1.15rem;}
+.blk li{margin-bottom:.28rem;font-size:.93rem;}
+.blk p{margin:0;font-size:.93rem;color:var(--ink-soft);}
+
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.5rem;}
+.specbox{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:.55rem .75rem;}
+.specbox b{display:block;font-size:.7rem;font-weight:800;letter-spacing:.06em;color:var(--ink-faint);margin-bottom:.1rem;}
+.specbox span{font-size:.88rem;font-weight:700;}
+
+.timeline{list-style:none;margin:0;padding:0;}
+.timeline li{display:flex;gap:.8rem;font-size:.9rem;padding:.3rem 0;border-bottom:1px dotted var(--line);}
+.timeline li:last-child{border-bottom:none;}
+.timeline .t{flex:none;width:4.6em;font-weight:800;color:var(--warm);font-variant-numeric:tabular-nums;}
+
+.tools{display:flex;flex-wrap:wrap;gap:.35rem;}
+.tools span{font-size:.82rem;background:var(--blue-soft);color:var(--blue);padding:.2rem .6rem;border-radius:6px;font-weight:600;}
+
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;}
+@media(max-width:560px){.fit{grid-template-columns:1fr;}}
+.fitbox{border-radius:10px;padding:.85rem 1rem;font-size:.9rem;}
+.fitbox h6{margin:0 0 .35rem;font-size:.82rem;font-weight:800;letter-spacing:.05em;}
+.fit-good{background:var(--accent-soft);} .fit-good h6{color:var(--accent-deep);}
+.fit-hard{background:#fdf3ef;} .fit-hard h6{color:var(--warm);}
+.fitbox ul{margin:0;padding-left:1.05rem;}
+.fitbox li{margin-bottom:.2rem;}
+
+.path{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;font-size:.85rem;font-weight:700;}
+.path span{background:var(--purple-soft);color:var(--purple);padding:.28rem .7rem;border-radius:8px;}
+.path i{color:var(--ink-faint);font-style:normal;}
+
+.videos{display:flex;flex-direction:column;gap:1.1rem;}
+.vid{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:.9rem;}
+.vid .vtitle{font-size:.86rem;font-weight:700;margin-bottom:.15rem;line-height:1.5;}
+.vid .vmeta{font-size:.74rem;color:var(--ink-faint);margin-bottom:.6rem;}
+.vid .vmeta b{color:var(--accent);}
+.ratio{position:relative;padding-top:56.25%;border-radius:8px;overflow:hidden;background:#000;}
+.ratio iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.vid .vpoint{margin-top:.6rem;font-size:.82rem;color:var(--ink-soft);background:var(--card);border-left:3px solid var(--warm);padding:.5rem .7rem;border-radius:0 6px 6px 0;}
+.vid .vpoint b{color:var(--warm);}
+
+.vs{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:1.6rem;}
+.vs-row{display:grid;grid-template-columns:9em 1fr 1fr;border-bottom:1px solid var(--line);}
+.vs.three .vs-row{grid-template-columns:9em 1fr 1fr 1fr;}
+.vs-row:last-child{border-bottom:none;}
+.vs-row>div{padding:.75rem .9rem;font-size:.88rem;}
+.vs-row .lbl{background:var(--paper);font-weight:800;font-size:.8rem;color:var(--ink-soft);display:flex;align-items:center;}
+.vs-row .a,.vs-row .b,.vs-row .c{border-left:1px solid var(--line);color:var(--ink-soft);}
+.vs-row .b{background:#f7fbfa;}
+.vs-head>div{font-weight:800;font-size:.85rem;padding:.7rem .9rem;}
+.vs-head .a,.vs-head .c{color:var(--ink-faint);} .vs-head .b{color:var(--accent-deep);}
+.vs-cap{font-size:.8rem;font-weight:800;letter-spacing:.05em;color:var(--accent);margin:1.6rem 0 .5rem;}
+@media(max-width:760px){
+  .vs-row,.vs.three .vs-row{grid-template-columns:1fr;}
+  .vs-row .lbl{border-bottom:1px solid var(--line);}
+  .vs-row .a,.vs-row .b,.vs-row .c{border-left:none;}
+  .vs-row .a::before,.vs-row .b::before,.vs-row .c::before{content:attr(data-l) "：";font-weight:800;color:var(--ink-faint);}
+  .vs-row .b::before{color:var(--accent-deep);}
+  .vs-head{display:none;}
+}
+
+.proc{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1rem;}
+.pcard{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:var(--radius);padding:1.05rem 1.2rem;box-shadow:var(--shadow);}
+.pcard .st{font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--accent);background:var(--accent-soft);display:inline-block;padding:.15rem .55rem;border-radius:999px;margin-bottom:.5rem;}
+.pcard h4{margin:0 0 .35rem;font-size:1rem;}
+.pcard p{margin:0 0 .6rem;font-size:.88rem;color:var(--ink-soft);}
+.pcard .dif{font-size:.82rem;background:var(--blue-soft);color:var(--blue);border-radius:8px;padding:.5rem .7rem;}
+.pcard .dif b{color:var(--blue);}
+
+.realgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;}
+.realcard{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--warm);border-radius:var(--radius);padding:1.1rem 1.25rem;box-shadow:var(--shadow);}
+.realcard h4{margin:0 0 .4rem;font-size:1rem;}
+.realcard p{margin:0 0 .6rem;font-size:.9rem;color:var(--ink-soft);}
+.realcard .tip{font-size:.83rem;background:var(--warm-soft);border-radius:8px;padding:.5rem .75rem;color:#8a4526;}
+.realcard .tip b{color:var(--warm);}
+
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:.8rem;margin-bottom:1.4rem;}
+.step{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--purple);border-radius:var(--radius);padding:1rem 1.15rem;box-shadow:var(--shadow);}
+.step .yr{font-size:.72rem;font-weight:800;letter-spacing:.07em;color:var(--purple);background:var(--purple-soft);display:inline-block;padding:.15rem .55rem;border-radius:999px;margin-bottom:.5rem;}
+.step h4{margin:0 0 .35rem;font-size:1rem;}
+.step p{margin:0;font-size:.87rem;color:var(--ink-soft);}
+.branch{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1rem;}
+.brcard{background:var(--blue-soft);border-radius:var(--radius);padding:1.05rem 1.2rem;}
+.brcard h4{margin:0 0 .35rem;font-size:.98rem;color:var(--blue);}
+.brcard p{margin:0;font-size:.88rem;color:var(--ink-soft);}
+
+.skillgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
+.skillcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.25rem;box-shadow:var(--shadow);}
+.skillcard .ic{font-size:1.5rem;}
+.skillcard h4{margin:.4rem 0 .35rem;font-size:1rem;}
+.skillcard p{margin:0 0 .6rem;font-size:.88rem;color:var(--ink-soft);}
+.skillcard .ex{font-size:.82rem;background:var(--accent-soft);border-radius:8px;padding:.5rem .7rem;color:var(--accent-deep);}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);}
+table{border-collapse:collapse;width:100%;font-size:.86rem;}
+#gyoTable{min-width:1120px;}
+#cmpTable{min-width:960px;}
+th,td{padding:.7rem .8rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+thead th{background:var(--accent-soft);color:var(--accent-deep);font-size:.78rem;letter-spacing:.04em;position:sticky;top:0;}
+tbody tr:hover{background:#fcfcfa;}
+td.jobname{font-weight:800;white-space:nowrap;}
+td.gyoname{font-weight:800;}
+.dots{letter-spacing:.12em;color:var(--accent);white-space:nowrap;font-size:.95rem;}
+.dots i{color:#d9d6cd;font-style:normal;}
+.tagS{font-size:.72rem;font-weight:800;padding:.1rem .45rem;border-radius:999px;white-space:nowrap;}
+.t-kumi{background:var(--blue-soft);color:var(--blue);}
+.t-pro{background:var(--warm-soft);color:#8a4526;}
+.t-sho{background:var(--accent-soft);color:var(--accent-deep);}
+.gyo-link{display:inline-block;margin-top:.45rem;font-size:.75rem;font-weight:800;white-space:nowrap;text-decoration:none;background:var(--accent-soft);color:var(--accent-deep);padding:.14rem .5rem;border-radius:999px;}
+.gyo-link:hover{background:var(--accent);color:#fff;}
+
+.quiz{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem 1.6rem;box-shadow:var(--shadow);}
+.q{margin-bottom:1.4rem;}
+.q p{margin:0 0 .6rem;font-weight:700;font-size:.98rem;}
+.q p b{color:var(--accent);margin-right:.4rem;}
+.opts{display:flex;gap:.5rem;flex-wrap:wrap;}
+.opts button{border:1.5px solid var(--line);background:var(--paper);border-radius:10px;padding:.55rem 1rem;font-size:.88rem;cursor:pointer;font-family:inherit;color:var(--ink-soft);font-weight:600;text-align:left;}
+.opts button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.quiz-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;}
+#result{margin-top:1.4rem;display:none;}
+#result.show{display:block;}
+.rescard{background:var(--accent-soft);border-radius:12px;padding:1.1rem 1.3rem;margin-bottom:.7rem;}
+.rescard .rank{font-size:.75rem;font-weight:800;letter-spacing:.08em;color:var(--accent);}
+.rescard h4{margin:.2rem 0 .3rem;font-size:1.12rem;}
+.rescard p{margin:0 0 .6rem;font-size:.9rem;color:var(--ink-soft);}
+.rescard a{font-size:.85rem;font-weight:700;}
+.note{font-size:.82rem;color:var(--ink-faint);margin-top:.8rem;}
+
+.axis{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:1.1rem 1.3rem;margin-bottom:.9rem;box-shadow:var(--shadow);}
+.axis h4{margin:0 0 .35rem;font-size:1.02rem;}
+.axis h4 b{color:var(--blue);margin-right:.4rem;}
+.axis p{margin:0 0 .6rem;font-size:.92rem;color:var(--ink-soft);}
+.axis .ask{font-size:.86rem;background:var(--blue-soft);color:var(--blue);border-radius:8px;padding:.55rem .8rem;font-weight:600;}
+
+.checklist{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem 1.5rem;box-shadow:var(--shadow);}
+.checklist label{display:flex;gap:.7rem;align-items:flex-start;padding:.55rem 0;border-bottom:1px dotted var(--line);cursor:pointer;font-size:.93rem;}
+.checklist label:last-child{border-bottom:none;}
+.checklist input{margin-top:.45rem;width:1.05em;height:1.05em;accent-color:var(--accent);flex:none;}
+.checklist .sub{display:block;font-size:.82rem;color:var(--ink-faint);font-weight:400;}
+.checklist input:checked + span{color:var(--ink-faint);text-decoration:line-through;}
+
+/* ---------- 実在企業 ---------- */
+.comp-tools{display:flex;flex-direction:column;gap:.7rem;margin-bottom:1.2rem;}
+.comp-row{display:flex;gap:.35rem;flex-wrap:wrap;align-items:center;}
+.comp-row>b{font-size:.74rem;font-weight:800;letter-spacing:.06em;color:var(--ink-faint);margin-right:.2rem;min-width:3.4em;}
+.comp-chip{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:.24rem .7rem;font-size:.79rem;font-weight:700;color:var(--ink-soft);cursor:pointer;font-family:inherit;}
+.comp-chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.comp-search{flex:1;min-width:190px;border:1.5px solid var(--line);border-radius:999px;padding:.4rem .9rem;font-size:.86rem;font-family:inherit;background:var(--card);color:var(--ink);}
+.comp-search:focus{outline:2px solid var(--accent-soft);border-color:var(--accent);}
+.comp-count{font-size:.82rem;color:var(--ink-faint);margin:0 0 .8rem;}
+.comp-count b{color:var(--accent-deep);font-size:1.05rem;}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:.8rem;}
+.comp-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;box-shadow:var(--shadow);}
+.comp-card h4{margin:0 0 .4rem;font-size:.97rem;line-height:1.45;}
+.comp-badges{display:flex;gap:.28rem;flex-wrap:wrap;margin-bottom:.45rem;}
+.comp-badges span{font-size:.69rem;font-weight:800;padding:.1rem .45rem;border-radius:999px;white-space:nowrap;}
+.cb-cat{background:var(--paper);border:1px solid var(--line);color:var(--ink-faint);}
+.s-ote{background:var(--blue-soft);color:var(--blue);}
+.s-chu{background:var(--accent-soft);color:var(--accent-deep);}
+.s-chi{background:var(--warm-soft);color:#8a4526;}
+.s-non{background:var(--purple-soft);color:var(--purple);}
+.comp-biz{margin:0 0 .45rem;font-size:.83rem;line-height:1.65;color:var(--ink-soft);}
+.comp-meta{margin:0;font-size:.75rem;color:var(--ink-faint);}
+.comp-more{display:flex;justify-content:center;margin-top:1.2rem;}
+.comp-empty{background:var(--warm-soft);border-radius:10px;padding:1rem 1.1rem;font-size:.9rem;color:#8a4526;}
+.comp-mini{display:flex;flex-wrap:wrap;gap:.35rem;}
+.comp-mini .cm{display:inline-flex;align-items:baseline;gap:.35rem;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.22rem .65rem;font-size:.82rem;}
+.comp-mini .cm b{font-weight:700;color:var(--ink);}
+.comp-mini .cm i{font-style:normal;font-size:.67rem;font-weight:800;color:var(--ink-faint);}
+.comp-inline-link{margin:.4rem 0 0;font-size:.82rem;font-weight:700;}
+.comp-caution{margin:.6rem 0 0;font-size:.79rem;line-height:1.7;color:var(--ink-soft);background:var(--warm-soft);border-radius:8px;padding:.55rem .75rem;}
+.comp-caution a{font-weight:700;white-space:nowrap;}
+.comp-res{margin:.55rem 0 0;font-size:.82rem;color:var(--ink-soft);border-top:1px dotted var(--line);padding-top:.5rem;}
+.comp-res a{font-weight:700;white-space:nowrap;}
+
+footer{border-top:1px solid var(--line);margin-top:4rem;padding:2rem 0 3rem;font-size:.82rem;color:var(--ink-faint);}
+footer h4{font-size:.85rem;color:var(--ink-soft);margin:0 0 .5rem;}
+footer ul{margin:0 0 1.2rem;padding-left:1.1rem;}
+footer li{margin-bottom:.2rem;}
+footer a{color:var(--ink-soft);}
+
+@media print{
+  .topbar,.filters,.quiz-actions,.hero-cta{display:none;}
+  .job-body{display:block !important;}
+  .ratio{display:none;}
+  body{font-size:11pt;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">製造生産職<span>まるわかり</span>ナビ</div>
+    <nav class="navlinks">
+      <a href="#map">全体地図</a>
+      <a href="#genba">現場との距離</a>
+      <a href="#zukan">職種図鑑</a>
+      <a href="#flow">モノが届くまで</a>
+      <a href="#real">現場のリアル</a>
+      <a href="#career">キャリア</a>
+      <a href="#hikaku">比較表</a>
+      <a href="#shindan">診断</a>
+      <a href="#erabikata">選び方</a>
+      <a href="#check">求人票チェック</a>
+      <a href="#kigyo">実在企業</a>
+    </nav>
+    <div class="zoomctl">
+      <span>文字</span>
+      <button data-zoom="normal" aria-pressed="true">標準</button>
+      <button data-zoom="big" aria-pressed="false">大</button>
+      <button data-zoom="huge" aria-pressed="false">特大</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">学生のための 製造・生産職ガイド（文系学生向け）</div>
+  <h1>ものをつくる会社で働く人は、<br><em>技術者だけではありません。</em></h1>
+  <p>
+    工場で一番多い議題は「間に合うのか」「足りているのか」「なぜ不良が出たのか」です。
+    これを回しているのは、技術や研究の専門家ではなく<strong>計画を立て、交渉し、調整する人たち</strong>です。
+    このページでは<strong>文系の学生が実際につく9つの製造・生産職</strong>を、動画と1日の流れで見ていきます。
+    技術職・研究職は扱いません。
+  </p>
+  <div class="hero-cta">
+    <a class="btn" href="#genba">現場との距離を見る</a>
+    <a class="btn ghost" href="#zukan">9職種の図鑑へ</a>
+  </div>
+
+  <div class="strip">
+    <h4>こんな理由で、製造業を候補から外していませんか？</h4>
+    <ul>
+      <li>「理系じゃないから工場では働けない」と思っている</li>
+      <li>ものづくりには興味があるけれど、<strong>自分に技術がないから無理だと決めている</strong></li>
+      <li>工場と聞いて、ライン作業だけを想像している</li>
+      <li>勤務地が郊外になるのが不安で、中身を見る前に外している</li>
+    </ul>
+    <div class="fix">
+      → 製造業の文系職は<strong>「つくる人」ではなく「つくれる状態をつくる人」</strong>です。求人数も多く、競争率は事務職より低い傾向があります。
+    </div>
+  </div>
+</header>
+
+<!-- ============ 全体地図 ============ -->
+<section id="map">
+  <h2><span class="num">MAP</span>製造・生産職の全体地図</h2>
+  <p class="lead">
+    文系がつく製造・生産職は、「<strong>モノの流れのどこを担当するか</strong>」で3つに分かれます。この3タイプで整理すると、求人票の職種名が読めるようになります。
+  </p>
+  <div class="mapgrid">
+    <div class="mapcard m1">
+      <div class="who">TYPE 1｜流れをつくる</div>
+      <h4>いつ・どれだけ・どこから調達して動かすか</h4>
+      <p>需要を予測して生産計画を立て、必要な材料を集め、できた製品を届けるまでを設計する仕事。<strong>工場の司令塔</strong>にあたる領域で、文系の採用が最も多い部分です。</p>
+      <div class="jobs"><span>生産管理・生産計画</span><span>調達・購買</span><span>物流・在庫管理</span><span>貿易・輸出入</span></div>
+    </div>
+    <div class="mapcard m2">
+      <div class="who">TYPE 2｜品質と数字を守る</div>
+      <h4>決めたとおりにできているかを確かめる</h4>
+      <p>品質の記録を取り、基準を守り、原価を計算する仕事。派手さはありませんが、<strong>会社の信頼と利益を支える</strong>領域です。専門知識が積み上がり、転職時に強くなります。</p>
+      <div class="jobs"><span>品質保証・品質管理</span><span>原価管理・工場経理</span><span>生産事務・受発注</span></div>
+    </div>
+    <div class="mapcard m3">
+      <div class="who">TYPE 3｜現場を動かす</div>
+      <h4>人と設備が動き続ける状態をつくる</h4>
+      <p>実際にラインに立ち、あるいは現場の人を採用し育て、安全を守る仕事。<strong>製品と人に最も近い</strong>場所で、現場のリーダーへ進む道があります。</p>
+      <div class="jobs"><span>製造オペレーター・現場リーダー</span><span>工場人事・総務・安全衛生</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 現場との距離（中核セクション） ============ -->
+<section id="genba">
+  <h2><span class="num">GENBA</span>現場との距離で、仕事はここまで違う</h2>
+  <p class="lead">
+    ここがこのページの中心です。同じ製造業でも、<strong>現場（ライン）にどれくらい近い場所で働くか</strong>で、1日の過ごし方も服装も勤務時間も変わります。
+    そして<strong>何をつくる会社か</strong>によって、生産の性質そのものが違います。3つの対比で構造をつかんでから、12業種の早見表を見てください。
+  </p>
+
+  <div class="vs-cap">対比 1 ｜ 現場に立つか、現場を動かすか</div>
+  <div class="vs">
+    <div class="vs-row vs-head"><div class="lbl"></div><div class="a">現場に立つ（ライン・倉庫）</div><div class="b">現場を動かす（オフィス）</div></div>
+    <div class="vs-row"><div class="lbl">代表的な職種</div><div class="a" data-l="現場">製造オペレーター、現場リーダー、倉庫・在庫管理</div><div class="b" data-l="オフィス">生産管理、購買、品質保証、原価管理、生産事務</div></div>
+    <div class="vs-row"><div class="lbl">服装</div><div class="a" data-l="現場">作業服・安全靴・ヘルメット。制服が支給される</div><div class="b" data-l="オフィス">オフィスカジュアル。現場に入るときだけ作業服</div></div>
+    <div class="vs-row"><div class="lbl">勤務時間</div><div class="a" data-l="現場">ラインの稼働に合わせる。交代勤務や夜勤がある</div><div class="b" data-l="オフィス">日勤が基本。ただし現場のトラブルで呼ばれることも</div></div>
+    <div class="vs-row"><div class="lbl">成果の見え方</div><div class="a" data-l="現場">その日つくった数がそのまま成果。手応えがある</div><div class="b" data-l="オフィス">計画どおりに進んだこと自体が成果。見えにくい</div></div>
+    <div class="vs-row"><div class="lbl">身につく力</div><div class="a" data-l="現場">工程と設備の理解、人をまとめる力、改善の視点</div><div class="b" data-l="オフィス">数字で考える力、交渉力、関係者をつなぐ調整力</div></div>
+    <div class="vs-row"><div class="lbl">きつさの正体</div><div class="a" data-l="現場">体力と生活リズム。立ち仕事と決まった時間の拘束</div><div class="b" data-l="オフィス">板挟み。現場と営業と取引先の要求が同時に来る</div></div>
+  </div>
+
+  <div class="vs-cap">対比 2 ｜ 何をつくるか（生産の性質）</div>
+  <div class="vs three">
+    <div class="vs-row vs-head"><div class="lbl"></div><div class="a">加工組立型</div><div class="b">プロセス型（装置産業）</div><div class="c">消費財型</div></div>
+    <div class="vs-row"><div class="lbl">業種の例</div><div class="a" data-l="加工組立">自動車、電機、機械、半導体、精密機器</div><div class="b" data-l="プロセス">化学、素材、鉄鋼、製紙、医薬品</div><div class="c" data-l="消費財">食品・飲料、日用品、化粧品、衣料</div></div>
+    <div class="vs-row"><div class="lbl">つくり方</div><div class="a" data-l="加工組立">部品を集めて組み立てる。工程が長く連鎖する</div><div class="b" data-l="プロセス">装置を止めずに連続生産する</div><div class="c" data-l="消費財">大量生産。多品種で切り替えが頻繁</div></div>
+    <div class="vs-row"><div class="lbl">仕事の焦点</div><div class="a" data-l="加工組立">部品の調達と工程の同期。1つ欠けると止まる</div><div class="b" data-l="プロセス">稼働率と安全。止めると損失が大きい</div><div class="c" data-l="消費財">需要予測と鮮度。売れ残りも欠品も損になる</div></div>
+    <div class="vs-row"><div class="lbl">勤務の特徴</div><div class="a" data-l="加工組立">稼働カレンダーに沿う。連休がまとまって取れる</div><div class="b" data-l="プロセス">24時間3交代が基本。手当は厚い</div><div class="c" data-l="消費財">繁忙期が季節で動く。24時間稼働の工場も</div></div>
+    <div class="vs-row"><div class="lbl">文系の主な入口</div><div class="a" data-l="加工組立">生産管理、購買、物流、原価管理</div><div class="b" data-l="プロセス">生産管理、購買、品質保証、物流</div><div class="c" data-l="消費財">生産管理、品質保証、需給調整、購買</div></div>
+  </div>
+
+  <div class="vs-cap">対比 3 ｜ どこに勤務するか</div>
+  <div class="vs">
+    <div class="vs-row vs-head"><div class="lbl"></div><div class="a">工場勤務</div><div class="b">本社・支店勤務</div></div>
+    <div class="vs-row"><div class="lbl">場所</div><div class="a" data-l="工場">郊外や工業地帯。車通勤が前提の立地も多い</div><div class="b" data-l="本社">都市部。電車通勤が中心</div></div>
+    <div class="vs-row"><div class="lbl">仕事の距離</div><div class="a" data-l="工場">現場が歩いてすぐ。自分の目で確かめられる</div><div class="b" data-l="本社">数字と報告で判断する。現場は出張で見に行く</div></div>
+    <div class="vs-row"><div class="lbl">担当の範囲</div><div class="a" data-l="工場">その工場の製品と工程に詳しくなる</div><div class="b" data-l="本社">複数工場をまとめて見る。全社の計画に関わる</div></div>
+    <div class="vs-row"><div class="lbl">異動</div><div class="a" data-l="工場">他の工場へ、あるいは本社へ。全国転勤の会社も</div><div class="b" data-l="本社">工場への異動もある。海外拠点へ出る道も</div></div>
+    <div class="vs-row"><div class="lbl">確認すべき点</div><div class="a" data-l="工場">通勤手段、寮や社宅の有無、交代勤務の対象か</div><div class="b" data-l="本社">工場への出張頻度、将来の工場勤務の可能性</div></div>
+  </div>
+
+  <h3>12業種 早見表｜製造業の中でも、こんなに違う</h3>
+  <p class="lead" style="margin-bottom:1rem">
+    「製造業」とひとくちに言っても中身は別物です。この表で「自分が受け入れられそうな行」を探すところから始めてください。横にスクロールできます。
+  </p>
+  <div class="tablewrap">
+    <table id="gyoTable">
+      <thead>
+        <tr>
+          <th>業種</th><th>何をつくる</th><th>生産の特徴</th><th>工場の場所</th>
+          <th>勤務の特徴</th><th>文系が就く主な職種</th><th>この業種ならではの特徴</th>
+        </tr>
+      </thead>
+      <tbody id="gyoBody"></tbody>
+    </table>
+  </div>
+  <p class="note">※ 同じ業種でも、会社の規模や工場の立地で実態は変わります。この表は「面接で何を質問すべきか」を考えるための出発点として使ってください。</p>
+</section>
+
+<!-- ============ 職種図鑑 ============ -->
+<section id="zukan">
+  <h2><span class="num">ZUKAN</span>職種図鑑｜文系がつく9つの製造・生産職</h2>
+  <p class="lead">
+    カードをクリックすると、職務プロフィール・仕事の中身・1日の流れ・使うツール・向き不向き・キャリア・<strong>紹介動画</strong>が開きます。
+    動画は厚生労働省の職業情報提供サイト（job tag）公式の職業紹介動画です。
+  </p>
+  <div class="filters" id="filters"></div>
+  <div class="jobs-list" id="jobsList"></div>
+</section>
+
+<!-- ============ モノが届くまで ============ -->
+<section id="flow">
+  <h2><span class="num">FLOW</span>モノができて届くまで｜どの職種がどこを担当するか</h2>
+  <p class="lead">
+    製造業の仕事は、この流れのどこかを受け持っています。<strong>自分が関わりたいのはどの工程か</strong>を考えると、職種の選び方がはっきりします。
+  </p>
+  <div class="proc">
+    <div class="pcard">
+      <div class="st">STEP 1</div>
+      <h4>どれだけつくるか決める</h4>
+      <p>営業の見込みや過去の実績から需要を読み、月次・週次の生産計画に落とす段階。設備の能力と人員、在庫を見ながら数を決めます。</p>
+      <div class="dif"><b>担当する職種：</b>生産管理・生産計画。ここが狂うと、後ろの全工程が崩れます。ExcelとERPを使い、営業と工場の間で数字を合わせます。</div>
+    </div>
+    <div class="pcard">
+      <div class="st">STEP 2</div>
+      <h4>材料と部品を集める</h4>
+      <p>必要な原材料・部品を、必要な量だけ、必要な日に届くように手配する段階。仕入先の選定、価格交渉、納期の督促を行います。</p>
+      <div class="dif"><b>担当する職種：</b>調達・購買。1円の値下げが全社の利益に直結します。海外調達がある会社では、貿易・輸出入と組んで動きます。</div>
+    </div>
+    <div class="pcard">
+      <div class="st">STEP 3</div>
+      <h4>つくる</h4>
+      <p>ラインを動かして製品にする段階。設備の段取り替え、人員の配置、作業手順の管理が日々発生します。トラブルが起きればすぐ止まります。</p>
+      <div class="dif"><b>担当する職種：</b>製造オペレーター・現場リーダー。文系の入社でも現場から始める会社があり、工程を体で知っている人は後で生産管理に強くなります。</div>
+    </div>
+    <div class="pcard">
+      <div class="st">STEP 4</div>
+      <h4>決めたとおりにできているか確かめる</h4>
+      <p>検査して基準を満たしているか確認し、記録を残す段階。不良が出たら原因を追い、再発防止の手を打ちます。顧客からの品質要求への対応も含みます。</p>
+      <div class="dif"><b>担当する職種：</b>品質保証・品質管理。文系は検査そのものより、規格の管理・監査対応・顧客とのやりとりを担当することが多くなります。</div>
+    </div>
+    <div class="pcard">
+      <div class="st">STEP 5</div>
+      <h4>保管して届ける</h4>
+      <p>できた製品を倉庫に入れ、注文に合わせて出荷する段階。在庫が多すぎれば資金を圧迫し、少なすぎれば欠品になります。</p>
+      <div class="dif"><b>担当する職種：</b>物流・在庫管理、生産事務・受発注。輸出があれば貿易・輸出入が船やコンテナを手配します。</div>
+    </div>
+    <div class="pcard">
+      <div class="st">STEP 6</div>
+      <h4>いくら儲かったかを出し、次に活かす</h4>
+      <p>実際にかかった原価を集計し、計画との差を分析する段階。ここで出た数字が、翌月の計画と値上げ交渉の根拠になります。</p>
+      <div class="dif"><b>担当する職種：</b>原価管理・工場経理。数字から「どの工程に無駄があるか」を指摘できる人は、工場の意思決定に関わっていけます。</div>
+    </div>
+  </div>
+  <p class="note">この6ステップを、人を採用し育て、安全に働ける状態を保って支えるのが<strong>工場人事・総務・安全衛生</strong>です。工場は人が集まる場所なので、この役割の重みが本社よりはるかに大きくなります。</p>
+</section>
+
+<!-- ============ 現場のリアル ============ -->
+<section id="real">
+  <h2><span class="num">REAL</span>製造・生産のリアル｜先に知っておくこと</h2>
+  <p class="lead">
+    求人票の良い面だけでは見えない部分です。<strong>知ったうえで選べば続けられます。</strong>知らずに入ると、早期離職の原因になります。
+  </p>
+  <div class="realgrid">
+    <div class="realcard">
+      <h4>勤務地は郊外になることが多い</h4>
+      <p>工場は土地が広く確保できる場所にあります。最寄り駅からバス、あるいは車通勤が前提の立地も珍しくありません。<strong>これは職種ではなく勤務地の問題</strong>なので、内定後に変えられません。</p>
+      <div class="tip"><b>確認する問い：</b>配属される可能性のある工場はどこですか？ 通勤手段と、寮や社宅はありますか？</div>
+    </div>
+    <div class="realcard">
+      <h4>交代勤務がある職場がある</h4>
+      <p>装置を止められない業種（化学・素材・半導体）や24時間稼働の食品工場では、交代勤務や夜勤があります。手当は厚くなりますが、<strong>生活リズムは確実に変わります。</strong>オフィス職なら日勤が基本です。</p>
+      <div class="tip"><b>確認する問い：</b>その職種は交代勤務の対象ですか？ 何交代で、何日サイクルですか？</div>
+    </div>
+    <div class="realcard">
+      <h4>現場の人と信頼をつくるところから</h4>
+      <p>生産管理や購買は、現場に「これをこの日までに」とお願いする立場です。年上のベテランが多く、<strong>新卒の指示がそのまま通るわけではありません。</strong>足を運んで顔を覚えてもらうところから始まります。</p>
+      <div class="tip"><b>確認する問い：</b>入社後、現場実習はどのくらいありますか？ 現場と事務の距離はどんな感じですか？</div>
+    </div>
+    <div class="realcard">
+      <h4>安全が何よりも優先される</h4>
+      <p>工場では、生産よりも安全が先です。ヘルメットや保護具の着用、決められた通路の歩行など、細かいルールが徹底されます。<strong>「効率のために省く」が最も嫌われる文化</strong>だと理解しておきましょう。</p>
+      <div class="tip"><b>確認する問い：</b>安全教育はどのように行われますか？ 過去の労災の状況は公開されていますか？</div>
+    </div>
+    <div class="realcard">
+      <h4>トラブルは必ず起きる</h4>
+      <p>設備が止まる、材料が届かない、不良が出る。計画どおりに進む日のほうが少ないくらいです。<strong>予定が崩れたときに動ける人</strong>が評価されます。完璧主義だと苦しくなる面があります。</p>
+      <div class="tip"><b>確認する問い：</b>納期に間に合わないとき、どう判断して調整していますか？</div>
+    </div>
+    <div class="realcard">
+      <h4>知名度は低いが、条件が良い会社が多い</h4>
+      <p>製造業には、消費者向けの商品がないため名前を知られていない優良企業が多数あります。<strong>競争率が低く、給与や休日の条件は良い</strong>という逆転が起きやすい領域です。年間休日120日以上の会社も多くあります。</p>
+      <div class="tip"><b>確認する問い：</b>どんな製品のどの部分を担っている会社ですか？ 取引先はどこですか？</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ キャリア ============ -->
+<section id="career">
+  <h2><span class="num">NEXT</span>キャリアの伸びしろ｜製造・生産職のその先</h2>
+  <p class="lead">
+    工場の仕事は<strong>積み上がりが効く</strong>領域です。工程と数字の両方を知っている人は、年数を重ねるほど代えがきかなくなります。
+  </p>
+  <div class="ladder">
+    <div class="step">
+      <div class="yr">1〜2年目</div>
+      <h4>担当者（現場を覚える）</h4>
+      <p>現場実習で工程を体で覚え、決まった業務を正確に回す時期。誰が何を担当しているか、どこで詰まるかを掴む。</p>
+    </div>
+    <div class="step">
+      <div class="yr">3〜5年目</div>
+      <h4>一人で回す担当者</h4>
+      <p>特定の製品ラインや仕入先を任され、自分で判断する。トラブル時の調整を担い、現場から名前で呼ばれるようになる。</p>
+    </div>
+    <div class="step">
+      <div class="yr">5〜8年目</div>
+      <h4>係長・主任・チームリーダー</h4>
+      <p>複数の製品や後輩を見る立場へ。<strong>「やり方そのものを変える」</strong>改善提案を任される。工場全体の数字を意識し始める。</p>
+    </div>
+    <div class="step">
+      <div class="yr">8年目〜</div>
+      <h4>課長・工場管理職／本社スタッフ</h4>
+      <p>工場の一部門を預かる、あるいは本社で複数工場をまとめる立場へ。海外工場の立ち上げに関わる道も開ける。</p>
+    </div>
+  </div>
+
+  <h3>製造・生産の経験が、そのまま武器になる次の道</h3>
+  <div class="branch">
+    <div class="brcard">
+      <h4>SCM・需給調整（本社）</h4>
+      <p>複数工場と販売計画をまとめて最適化する仕事。<strong>工場の制約を体で知っている人にしかできない</strong>ため、生産管理出身者が中心になる。</p>
+    </div>
+    <div class="brcard">
+      <h4>海外工場の立ち上げ・管理</h4>
+      <p>アジアの工場に駐在し、現地のスタッフと生産を回す。20代で赴任する例もあり、語学と工程知識が揃うと一気に道が開ける。</p>
+    </div>
+    <div class="brcard">
+      <h4>調達戦略・コスト企画</h4>
+      <p>どこから買うかを会社全体で設計する仕事。為替や地政学リスクまで見て判断する、経営に近い領域。</p>
+    </div>
+    <div class="brcard">
+      <h4>生産技術・改善推進（IE）</h4>
+      <p>工程そのものを設計し直し、無駄を取る仕事。文系からでも、現場経験と数字の力があれば入っていける。</p>
+    </div>
+    <div class="brcard">
+      <h4>品質保証のスペシャリスト</h4>
+      <p>ISOや業界規格の監査対応を担う専門職。資格と経験が積み上がり、<strong>年齢を重ねても求人があり続ける</strong>のが強み。</p>
+    </div>
+    <div class="brcard">
+      <h4>営業・商品企画へ転じる</h4>
+      <p>「つくれるかどうか」が分かる営業は取引先に信頼される。原価と工程を知っている人が商品企画に回るケースも多い。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 共通スキル ============ -->
+<section id="skills">
+  <h2><span class="num">SKILL</span>どの製造・生産職にも共通する6つの力</h2>
+  <p class="lead">
+    技術の専門知識より先に見られるのはこの6つです。<strong>面接で語れる自分の強み</strong>に直結します。
+  </p>
+  <div class="skillgrid">
+    <div class="skillcard">
+      <div class="ic">📅</div>
+      <h4>段取りを組む力</h4>
+      <p>限られた設備と人と時間で、どの順番に何をやるかを決める力。製造業の仕事はほぼすべてこれです。優先順位を自分でつけられるかが問われます。</p>
+      <div class="ex">語れる経験例：複数の締切を並行してこなした経験と、その組み立て方</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">📊</div>
+      <h4>数字で考える力</h4>
+      <p>生産数、在庫、原価、不良率。<strong>「なんとなく足りない」ではなく「あと何個足りない」で話せる人</strong>が信頼されます。Excelは全職種で必ず使います。</p>
+      <div class="ex">目安：Excelで関数・ピボットテーブル、簿記3級。数字を根拠に提案できると強い</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">🤝</div>
+      <h4>立場の違う人に頼む力</h4>
+      <p>現場のベテラン、営業、仕入先。利害が違う相手に動いてもらう必要があります。命令ではなく<strong>理由を説明して納得してもらう</strong>力が要ります。</p>
+      <div class="ex">語れる経験例：意見が違う相手と折り合いをつけて物事を進めた場面</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">🔍</div>
+      <h4>原因を掘る力</h4>
+      <p>不良やトラブルが起きたとき、「たまたま」で済ませず、なぜ起きたかを掘る姿勢。製造業には<strong>「なぜを5回繰り返す」</strong>という文化が根づいています。</p>
+      <div class="ex">語れる経験例：うまくいかなかった原因を分析して、やり方を変えた経験</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">📝</div>
+      <h4>記録を残す力</h4>
+      <p>誰がいつ何をしたかを残すことが、品質と安全の土台になります。地味ですが、<strong>記録がないと原因も追えず、監査も通りません。</strong></p>
+      <div class="ex">意識すること：あとから読む人に分かる書き方。自分用のメモで終わらせない</div>
+    </div>
+    <div class="skillcard">
+      <div class="ic">🔄</div>
+      <h4>変化に合わせる力</h4>
+      <p>計画は必ず崩れます。設備が止まり、材料が遅れ、急な注文が入る。そのたびに組み直せる柔軟さが、この仕事を続けられるかを分けます。</p>
+      <div class="ex">語れる経験例：予定が急に変わったとき、どう立て直したか</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 比較表 ============ -->
+<section id="hikaku">
+  <h2><span class="num">HIKAKU</span>9職種ひと目で比較</h2>
+  <p class="lead">
+    ●が多いほどその要素が強いという目安です（会社の規模や業種で変わります）。横にスクロールできます。
+  </p>
+  <div class="tablewrap">
+    <table id="cmpTable">
+      <thead>
+        <tr>
+          <th>職種</th><th>現場との近さ</th><th>数字を扱う</th><th>社外との交渉</th>
+          <th>専門知識の必要度</th><th>交代勤務の可能性</th><th>主な勤務地</th><th>代表的な資格</th>
+        </tr>
+      </thead>
+      <tbody id="cmpBody"></tbody>
+    </table>
+  </div>
+  <p class="note">「現場との近さ」＝ 作業服を着てラインに入る頻度。高いほど、製品と設備に直接触れる仕事です。</p>
+</section>
+
+<!-- ============ 診断 ============ -->
+<section id="shindan">
+  <h2><span class="num">CHECK</span>かんたん適性診断</h2>
+  <p class="lead">
+    5つの質問に答えると、相性が良さそうな職種を3つ表示します。<strong>答えを決めるものではなく、調べる方向を絞る道具</strong>として使ってください。
+  </p>
+  <div class="quiz">
+    <div id="quizBody"></div>
+    <div class="quiz-actions">
+      <button class="btn" id="calcBtn">結果を見る</button>
+      <button class="btn ghost" id="resetBtn">やり直す</button>
+    </div>
+    <div id="result"></div>
+  </div>
+</section>
+
+<!-- ============ 選び方の軸 ============ -->
+<section id="erabikata">
+  <h2><span class="num">AXIS</span>企業・職種を選ぶ6つの軸</h2>
+  <p class="lead">
+    製造業は知名度で選ぶと大事なことを見落とします。この6つで比べれば、自分の言葉で志望動機が書けるようになります。
+  </p>
+
+  <div class="axis">
+    <h4><b>軸1</b>何をつくっている会社か</h4>
+    <p>最終製品をつくる会社か、その部品や材料をつくる会社か。消費者が知らない会社でも、業界では欠かせない存在という企業が無数にあります。<strong>「誰の何に使われているか」</strong>を調べると、仕事の意味が見えてきます。</p>
+    <div class="ask">自問：その製品は、最終的に誰のどんな場面で使われている？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸2</b>配属される可能性のある勤務地</h4>
+    <p>製造業で最も重要な確認事項です。本社採用でも工場配属があり、工場は郊外にあります。<strong>内定後には変えられません。</strong>「全国転勤」なのか「この工場限定」なのかで、生活設計がまるごと変わります。</p>
+    <div class="ask">確認する問い：配属の可能性がある拠点をすべて教えてください。転勤の範囲はどこまでですか？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸3</b>現場との距離（職種の位置）</h4>
+    <p>作業服でラインに入る仕事か、オフィスで数字を動かす仕事か。<strong>どちらが良い悪いではなく、疲れ方と身につく力が違います。</strong>現場を経験してからオフィス職に移る会社もあり、その順番も確認する価値があります。</p>
+    <div class="ask">自問：ものに直接触れたい？ それとも全体を動かす側にいたい？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸4</b>交代勤務と年間休日</h4>
+    <p>交代勤務の有無は生活リズムを左右します。一方で製造業は<strong>年間休日が多い会社が多く</strong>（120日以上も珍しくない）、稼働カレンダーで連休がまとまって取れる利点もあります。数字で比べてください。</p>
+    <div class="ask">確認する問い：年間休日は何日ですか？ その職種に交代勤務はありますか？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸5</b>教育体制と、一人立ちまでの道筋</h4>
+    <p>製造業は覚えることが多く、独り立ちまでに時間がかかります。現場実習が組まれているか、教育担当がつくか。<strong>最初の1年をどう育ててもらえるか</strong>がその後を大きく左右します。</p>
+    <div class="ask">確認する問い：現場実習はどのくらいありますか？ 新人には教育担当がつきますか？</div>
+  </div>
+
+  <div class="axis">
+    <h4><b>軸6</b>その製品と工場はこれから伸びるか</h4>
+    <p>国内生産を維持するのか、海外に移すのか。設備投資をしているか、自動化やDXをどこまで進めているか。<strong>単純な入力や記録の作業は減り、判断と調整の仕事が残ります。</strong>会社がどちらに投資しているかを見てください。</p>
+    <div class="ask">確認する問い：国内工場への投資計画はありますか？ 生産管理システムはどの程度導入されていますか？</div>
+  </div>
+</section>
+
+<!-- ============ 求人票チェック ============ -->
+<section id="check">
+  <h2><span class="num">LIST</span>求人票で必ず見るチェックリスト</h2>
+  <p class="lead">応募前・面接前にこの10項目を確認しましょう。埋まらない項目が、そのまま質問すべきことになります。</p>
+  <div class="checklist">
+    <label><input type="checkbox"><span>何をつくっている会社か、自分の言葉で説明できるか<span class="sub">最終製品か部品・材料か。誰の何に使われているかまで調べる</span></span></label>
+    <label><input type="checkbox"><span>配属される可能性のある勤務地がすべて書かれているか<span class="sub">製造業で最重要。工場は郊外にあり、内定後には変えられない</span></span></label>
+    <label><input type="checkbox"><span>その職種は現場勤務かオフィス勤務か<span class="sub">作業服を着る頻度で、1日の過ごし方がまったく変わる</span></span></label>
+    <label><input type="checkbox"><span>交代勤務・夜勤の有無と、そのサイクル<span class="sub">手当は厚いが生活リズムが変わる。職種によって対象が違う</span></span></label>
+    <label><input type="checkbox"><span>年間休日日数と、稼働カレンダーの休みの取り方<span class="sub">製造業は年間休日が多い会社も。連休の取りやすさも聞く</span></span></label>
+    <label><input type="checkbox"><span>転勤の範囲（全国／エリア限定／拠点固定）<span class="sub">工場が複数ある会社では異動が前提のことも多い</span></span></label>
+    <label><input type="checkbox"><span>現場実習の期間と、入社後の教育の流れ<span class="sub">覚えることが多い職種なので、育てる仕組みがあるかは重要</span></span></label>
+    <label><input type="checkbox"><span>普通自動車免許の要否と、通勤手段<span class="sub">車通勤が前提の立地なら、入社までに取得が必要な場合がある</span></span></label>
+    <label><input type="checkbox"><span>使用するシステム（生産管理・ERP・在庫管理）<span class="sub">入社後に身につくスキルが具体的に想像できる</span></span></label>
+    <label><input type="checkbox"><span>工場見学ができるか<span class="sub">実際の職場の空気、社員の年齢層、清潔さは、求人票よりずっと正直</span></span></label>
+  </div>
+</section>
+
+<!-- ============ 実在企業 ============ -->
+<section id="kigyo">
+  <h2><span class="num">REAL</span>実際に、こんな企業がある</h2>
+  <p class="lead">
+    同じ「製造業」でも、つくるものも工場の場所も働く時間も会社によって違います。
+    ここまでで気になった<strong>業種と現場との距離</strong>を手がかりに、実際の企業を見てください。関西の大学の公開就職実績に載っている企業です。
+    <strong>知らない会社ほど、調べる価値があります。</strong>
+  </p>
+  <div class="comp-tools">
+    <div class="comp-row" id="compCat"><b>業種</b></div>
+    <div class="comp-row" id="compSize"><b>規模</b></div>
+    <div class="comp-row"><b>検索</b><input class="comp-search" id="compQ" type="search" placeholder="企業名・事業内容で絞り込む" aria-label="企業名・事業内容で絞り込む"></div>
+  </div>
+  <p class="comp-count" id="compCount"></p>
+  <div class="comp-grid" id="compGrid"></div>
+  <div class="comp-more"><button class="btn ghost" id="compMore">さらに20社見る</button></div>
+  <p class="note">
+    出典は各大学が公開している就職実績です。<strong>掲載されていることは、その企業が今も募集していることや、特定の職種で採用があることを意味しません。</strong>
+    必ず各社の採用情報で最新の内容を確認してください。規模区分（大手・中堅・地域）は、事業の展開範囲をもとにした教材上のおおまかな目安です。
+  </p>
+</section>
+
+<footer>
+  <h4>参考・出典</h4>
+  <ul>
+    <li>厚生労働省 職業情報提供サイト（日本版O-NET）「job tag」 <a href="https://shigoto.mhlw.go.jp/" target="_blank" rel="noopener">https://shigoto.mhlw.go.jp/</a></li>
+    <li>厚生労働省公式YouTubeチャンネル 職業紹介動画 <a href="https://www.youtube.com/playlist?list=PLMG33RKISnWgIokWgBFwUxRs_966FZyef" target="_blank" rel="noopener">プレイリストを見る</a></li>
+    <li>各職種の業務内容・1日の流れ・業種比較は、job tag の職業解説および一般的な実務例をもとに教材用に再構成したものです。実際の業務・勤務条件は企業や工場によって大きく異なります。</li>
+  </ul>
+  <p>本ページは学生のキャリア教育用教材です。動画は各配信者の権利物であり、YouTube の埋め込み機能により表示しています。</p>
+</footer>
+
+</div>
+
+<script>
+/* ========== 12業種 早見表 ========== */
+const GYOSHU = [
+ {name:"食品・飲料", type:"s", tsukuru:"日常的に消費される食品と飲料",
+  seisan:"賞味期限が短く需要変動が大きい。多品種を切り替えながら生産",
+  basho:"消費地の近く。全国に分散している", kinmu:"24時間稼働の工場が多く、交代勤務がある",
+  bunkei:"生産管理、品質保証、購買、物流", feat:"衛生管理（HACCP）が厳しい。季節と天候で計画が動くため、需給調整の腕が問われる"},
+ {name:"医薬品・化粧品", type:"p", tsukuru:"医薬品、化粧品、衛生用品",
+  seisan:"規制が厳しく手順書どおりが絶対。ロット管理が厳密",
+  basho:"限られた拠点に集中している", kinmu:"日勤中心の工場も多い",
+  bunkei:"品質保証、生産管理、薬事、購買", feat:"GMPなどの法規制の知識が資産になる。記録と検証の文化が徹底しており、文書の仕事が多い"},
+ {name:"自動車・輸送機器", type:"k", tsukuru:"自動車、車体、駆動部品",
+  seisan:"組立ラインで大量生産。必要な分だけ届くジャストインタイム",
+  basho:"愛知・関東・九州などに集積", kinmu:"交代勤務が一般的。稼働カレンダーに沿った休日",
+  bunkei:"生産管理、購買、物流、原価管理", feat:"取引先がピラミッド構造になっており、1つの部品の遅れが全体に波及する緊張感がある"},
+ {name:"電機・電子部品", type:"k", tsukuru:"家電、電子部品、電子デバイス",
+  seisan:"製品サイクルが短く、生産の切り替えが頻繁",
+  basho:"国内は開発と試作、量産は海外拠点も", kinmu:"海外工場との時差対応が入ることがある",
+  bunkei:"生産管理、購買、貿易、品質保証", feat:"海外拠点との調整が多く、英語を使う場面がある。文系でもグローバルに関われる入口"},
+ {name:"機械・産業機器", type:"k", tsukuru:"工作機械、建設機械、産業設備",
+  seisan:"受注生産・一品物が多く、納期が長い",
+  basho:"地方に大規模な工場を持つ", kinmu:"日勤中心。納期前に業務が集中する",
+  bunkei:"生産管理、購買、受発注、原価管理", feat:"図面と仕様の理解が必要。1台が高額なため、納期遅延の影響が非常に大きい"},
+ {name:"化学・素材", type:"p", tsukuru:"樹脂、塗料、繊維原料、産業ガス",
+  seisan:"装置を止められない連続生産（プロセス型）",
+  basho:"臨海部のコンビナートに集中", kinmu:"24時間3交代が基本。手当は厚い",
+  bunkei:"生産管理、購買、物流、品質保証", feat:"装置産業なので稼働率が命。安全管理が最優先され、止めることの損失が非常に大きい"},
+ {name:"鉄鋼・金属", type:"p", tsukuru:"鋼材、非鉄金属、金属加工品",
+  seisan:"大型設備での連続生産。ロットが大きい",
+  basho:"臨海部と工業地帯", kinmu:"交代勤務。高温環境の現場もある",
+  bunkei:"生産管理、購買、物流", feat:"設備が巨大で、計画の単位も金額も大きい。安全教育が徹底されている"},
+ {name:"建材・住宅設備", type:"k", tsukuru:"サッシ、キッチン、床材、建具",
+  seisan:"受注生産と在庫生産が混在。住宅の着工数に連動",
+  basho:"全国に分散している", kinmu:"日勤中心。年度末が繁忙期",
+  bunkei:"生産管理、受発注、物流、購買", feat:"工務店や住宅メーカーの工程に合わせるため、納期調整そのものが仕事の中心になる"},
+ {name:"日用品・トイレタリー", type:"s", tsukuru:"洗剤、紙製品、衛生用品",
+  seisan:"大量生産。小売の販促計画に合わせて生産量が動く",
+  basho:"消費地の近く", kinmu:"交代勤務のある工場もある",
+  bunkei:"生産管理、購買、物流、品質保証", feat:"欠品も過剰在庫も許されない。小売の販促に生産が振られるため、需給調整の難度が高い"},
+ {name:"衣料・繊維", type:"s", tsukuru:"衣料品、生地、服飾資材",
+  seisan:"海外生産が中心。国内は企画と品質管理が主",
+  basho:"国内工場は限られる", kinmu:"日勤中心",
+  bunkei:"生産管理（海外工場の管理）、品質保証、貿易", feat:"海外の縫製工場とやりとりする生産管理が主役。語学と交渉力が直接効く"},
+ {name:"印刷・紙・包装", type:"s", tsukuru:"印刷物、パッケージ、紙製品",
+  seisan:"短納期・多品種。日々の段取り替えが多い",
+  basho:"都市近郊", kinmu:"夜勤のある工場もある",
+  bunkei:"生産管理、受発注、営業事務", feat:"納期が非常に短く、校正やデザインのやりとりも発生する。スピードが求められる"},
+ {name:"半導体・精密機器", type:"k", tsukuru:"半導体、精密部品、計測機器",
+  seisan:"クリーンルームでの24時間稼働。設備投資が巨額",
+  basho:"九州・東北・中部に集積", kinmu:"4交代などのシフト勤務",
+  bunkei:"生産管理、購買、品質保証", feat:"微細な管理が求められ、歩留まりが数字の中心。投資サイクルに採用が連動しやすい"}
+];
+function renderGyoshu(){
+  const TAG={k:["加工組立型","t-kumi"],p:["プロセス型","t-pro"],s:["消費財型","t-sho"]};
+  document.getElementById("gyoBody").innerHTML = GYOSHU.map(g=>`
+    <tr>
+      <td class="gyoname">${g.name}<br><span class="tagS ${TAG[g.type][1]}">${TAG[g.type][0]}</span></td>
+      <td>${g.tsukuru}</td><td>${g.seisan}</td><td>${g.basho}</td>
+      <td>${g.kinmu}</td><td>${g.bunkei}</td><td>${g.feat}</td>
+    </tr>`).join("");
+}
+
+/* ========== 職種図鑑 ========== */
+const JOBS = [
+  {
+    id:"seikan", icon:"📅", name:"生産管理・生産計画",
+    catch:"いつ何をどれだけつくるか決める、工場の司令塔",
+    tags:["オフィス勤務","文系の主力","調整力が武器"],
+    cats:["all","office","nagare"],
+    spec:{kyori:"近い（現場に日常的に行く）", atsukau:"生産計画・在庫・納期", aite:"現場・営業・仕入先", kinmu:"日勤が基本"},
+    who:"製造現場、営業部門、仕入先、物流部門",
+    duties:[
+      "受注と需要予測をもとに、月次・週次の生産計画を立てる",
+      "設備の能力と人員、在庫を見ながら生産する順番を決める",
+      "材料の手配状況を確認し、遅れがあれば計画を組み替える",
+      "営業からの納期の問い合わせや、短納期の依頼に対応する",
+      "生産実績を集計し、計画との差の原因を分析する",
+      "工場の朝礼や生産会議で、進捗と問題点を共有する"
+    ],
+    day:[
+      ["8:30","出社。前日の生産実績と当日の予定を確認"],
+      ["9:00","現場をまわり、ラインの状況と困りごとを聞く"],
+      ["10:00","生産会議。遅れている品目の対策を関係部署と決める"],
+      ["11:30","営業からの短納期依頼を受け、割り込めるか検討"],
+      ["12:00","昼休憩"],
+      ["13:00","来週の生産計画を作成。材料の入荷予定と突き合わせる"],
+      ["15:00","仕入先に納期の督促。遅れる分は計画を組み替え"],
+      ["16:30","在庫と出荷予定を確認し、物流部門へ連絡"],
+      ["17:30","退勤（月末と繁忙期は残業が出やすい）"]
+    ],
+    tools:["Excel（関数・ピボット必須）","生産管理システム／ERP","在庫管理システム","社内チャット","ビジネスメール"],
+    good:["段取りを考えるのが好き","板挟みになっても冷静に落としどころを探せる","数字で状況を説明できる"],
+    hard:["現場と営業の要求が正面からぶつかる板挟みになる","計画どおりに進む日が少なく、常に組み替えが必要","成果が「問題が起きなかったこと」なので見えにくい"],
+    quals:["Excel（実務レベル）","日商簿記3級","生産管理プランニング（ビジネス・キャリア検定）","普通自動車免許"],
+    path:["生産管理担当","主要製品・主要ラインを担当","係長・課長として工場の計画全体を見る","本社のSCM・需給調整、海外工場の管理へ"],
+    videos:[
+      {id:"GgIdlPv4Bsw", title:"生産・工程管理事務（job tag 職業紹介動画）", src:"厚生労働省", point:"この職種が扱う「紙と数字」の量に注目。現場に出る場面とデスクにいる場面の比率を数えてみよう。"},
+      {id:"re7UjciVD58", title:"生産・品質管理技術者（job tag 職業紹介動画）", src:"厚生労働省", point:"技術者向けの動画だが、生産管理が何を見て判断しているかが分かる。文系が担うのは主に計画と調整の部分。"}
+    ]
+  },
+  {
+    id:"kobai", icon:"🤝", name:"調達・購買（バイヤー）",
+    catch:"どこからいくらで買うかを決め、1円の差で会社の利益を動かす",
+    tags:["オフィス勤務","社外交渉が多い","数字が武器"],
+    cats:["all","office","nagare","kosho"],
+    spec:{kyori:"中くらい（必要に応じて現場へ）", atsukau:"仕入先・価格・納期", aite:"仕入先・生産管理・技術部門", kinmu:"日勤が基本"},
+    who:"原材料や部品の仕入先、社内の生産管理と技術部門",
+    duties:[
+      "生産計画に合わせて、原材料や部品を発注する",
+      "仕入先を探し、見積を取り、価格と条件を交渉する",
+      "納期の遅れがないか管理し、遅れれば督促と代替手配をする",
+      "複数の仕入先を比較し、品質とコストと安定供給のバランスを取る",
+      "コストダウンの提案をまとめ、年度の目標として追う",
+      "仕入先の工場を訪問し、生産能力や品質体制を確認する"
+    ],
+    day:[
+      ["8:45","出社。仕入先からのメールと納期回答を確認"],
+      ["9:30","生産管理から届いた必要数をもとに発注をかける"],
+      ["10:30","新しい仕入先と面談。見積内容と生産能力を確認"],
+      ["12:00","昼休憩"],
+      ["13:00","既存の仕入先と価格交渉。値上げ要請への対応を協議"],
+      ["15:00","納期が遅れている部品の状況確認と代替先の検討"],
+      ["16:00","コストダウンの進捗を集計し、上司へ報告"],
+      ["17:30","退勤（決算期と価格改定の時期は繁忙）"]
+    ],
+    tools:["Excel（比較表・原価計算）","購買システム／ERP","ビジネスメール","英文メール（海外調達）","Web会議ツール"],
+    good:["交渉で落としどころを見つけるのが面白い","数字を根拠に判断できる","相手の事情も踏まえて話を進められる"],
+    hard:["値上げ要請と社内のコスト目標の間で板挟みになる","供給が止まると生産全体が止まる責任の重さ","為替や情勢など自分では動かせない要因に振られる"],
+    quals:["Excel（実務レベル）","日商簿記3級・2級","TOEIC（海外調達がある場合）","普通自動車免許"],
+    path:["購買担当（発注中心）","品目を任され価格交渉まで担当","購買チームのリーダー・課長","調達戦略、海外調達、コスト企画へ"],
+    videos:[
+      {id:"8gndIkm1p-A", title:"マーチャンダイザー、バイヤー（job tag 職業紹介動画）", src:"厚生労働省", point:"この動画は小売業のバイヤーだが、「仕入先を選び、価格と納期を交渉する」流れは製造業の購買と共通。製造業では相手が原材料や部品のメーカーになる、と置き換えて見よう。"}
+    ]
+  },
+  {
+    id:"hinshitsu", icon:"🔬", name:"品質保証・品質管理",
+    catch:"決めたとおりにできているかを確かめ、記録で会社を守る",
+    tags:["オフィス＋現場","専門性が積み上がる","資格が効く"],
+    cats:["all","office","hinshitsu"],
+    spec:{kyori:"近い（検査と現場確認）", atsukau:"規格・検査記録・不良情報", aite:"製造現場・顧客・監査機関", kinmu:"日勤が基本"},
+    who:"製造現場、取引先の品質部門、審査機関",
+    duties:[
+      "製品や原材料の検査を行い、基準を満たしているか確認する",
+      "検査記録の作成と管理。トレーサビリティを確保する",
+      "不良が出たときの原因調査と、再発防止策のとりまとめ",
+      "取引先からのクレーム対応と、報告書の作成",
+      "ISOや業界規格の監査対応、社内の手順書の整備",
+      "現場への品質教育、工程のチェック（パトロール）"
+    ],
+    day:[
+      ["8:30","出社。前日の検査結果と不良の発生状況を確認"],
+      ["9:00","入荷した原材料の検査。記録をシステムに入力"],
+      ["10:30","現場をまわり、手順どおりに作業されているか確認"],
+      ["12:00","昼休憩"],
+      ["13:00","取引先からのクレームについて、原因調査を現場と実施"],
+      ["15:00","再発防止策をまとめ、報告書を作成"],
+      ["16:30","来月のISO監査に向けて、記録の不備をチェック"],
+      ["17:30","退勤（クレーム発生時と監査前は残業が出る）"]
+    ],
+    tools:["Excel（データ集計・管理図）","品質管理システム","検査機器（種類は業種による）","文書管理システム","Word（報告書）"],
+    good:["「たぶん大丈夫」で流さず確認できる","細かい記録を正確に残せる","原因を筋道立てて追うのが好き"],
+    hard:["不良やクレームが出ると一気に忙しくなる","現場に「ダメです」と伝える場面があり、嫌われ役になりやすい","覚える規格と法規制が多く、学び続ける必要がある"],
+    quals:["QC検定（品質管理検定）2級・3級","ISO内部監査員","食品衛生管理者（食品業界）","Excel（データ分析）"],
+    path:["検査・記録の担当","不良対応と改善提案を担当","品質保証チームのリーダー","品質保証のスペシャリスト、本社の品質統括へ"],
+    videos:[
+      {id:"re7UjciVD58", title:"生産・品質管理技術者（job tag 職業紹介動画）", src:"厚生労働省", point:"検査そのものだけでなく、記録と改善が仕事の中心であることに注目。文系は規格の管理・監査対応・顧客とのやりとりを担うことが多い。"}
+    ]
+  },
+  {
+    id:"butsuryu", icon:"📦", name:"物流・在庫管理",
+    catch:"できた製品を、必要な数だけ、必要な日に届ける",
+    tags:["現場に近い","段取りが命","体を動かす場面も"],
+    cats:["all","genba","nagare"],
+    spec:{kyori:"とても近い（倉庫が職場）", atsukau:"在庫・出荷・配送スケジュール", aite:"倉庫スタッフ・運送会社・営業", kinmu:"早番のある職場も"},
+    who:"倉庫のスタッフ、運送会社、営業部門、取引先",
+    duties:[
+      "受注に合わせて出荷の指示を出し、伝票を発行する",
+      "在庫数の管理と棚卸し。システムと実数の差を調べる",
+      "運送会社の手配、配送ルートと積載の調整",
+      "倉庫のレイアウトや保管方法の改善",
+      "入荷した製品の受け入れ、検品、保管場所の指示",
+      "欠品や誤出荷が起きたときの対応と原因の特定"
+    ],
+    day:[
+      ["8:00","出社。当日の出荷予定と在庫状況を確認"],
+      ["8:30","倉庫で朝礼。作業者に当日の出荷内容を伝える"],
+      ["9:30","出荷伝票の発行。運送会社へ集荷を依頼"],
+      ["11:00","入荷品の受け入れと検品、保管場所の指示"],
+      ["12:00","昼休憩"],
+      ["13:00","在庫データの確認。差異があれば現物を数え直す"],
+      ["15:00","急な追加注文に対応。積み込みの順番を組み替え"],
+      ["16:30","翌日の出荷準備と、運送会社との調整"],
+      ["17:30","退勤（月末と繁忙期は出荷が集中する）"]
+    ],
+    tools:["在庫管理システム／WMS","ハンディターミナル","Excel","フォークリフト（資格が必要）","配送管理システム"],
+    good:["体を動かしながら働きたい","きれいに整った状態をつくるのが好き","その日の成果が見えるほうが張り合いがある"],
+    hard:["繁忙期は物量が一気に増え、体力を使う","誤出荷や欠品が取引先に直接迷惑をかける","倉庫は夏は暑く冬は寒い職場が多い"],
+    quals:["フォークリフト運転技能講習（実務で有用）","物流技術管理士","Excel","普通自動車免許"],
+    path:["出荷・在庫の担当","倉庫の運営と作業者の管理","物流拠点の責任者","本社の物流企画、SCM、拠点の統括へ"],
+    videos:[
+      {id:"5oGt8jYZ5AM", title:"倉庫作業員（job tag 職業紹介動画）", src:"厚生労働省", point:"倉庫の中でどんな作業が行われているかを確認。管理側に回っても、この現場を知らないと指示が出せない。"},
+      {id:"rc7MD7wAZOo", title:"物流設備管理・保全（job tag 職業紹介動画）", src:"厚生労働省", point:"物流が「人力」ではなく設備で動いていることに注目。自動化が進むほど、管理と改善の仕事が中心になる。"},
+      {id:"Nrm6p18gtTk", title:"フォークリフト運転作業員（job tag 職業紹介動画）", src:"厚生労働省", point:"資格があると任される範囲が広がる例。文系でも入社後に取得する人が多い。"}
+    ]
+  },
+  {
+    id:"seizo", icon:"🏭", name:"製造オペレーター・現場リーダー",
+    catch:"実際にラインを動かし、やがて現場を預かる立場になる",
+    tags:["現場勤務","交代勤務あり","未経験から入りやすい"],
+    cats:["all","genba"],
+    spec:{kyori:"最も近い（ラインが職場）", atsukau:"設備・作業手順・人員配置", aite:"同じラインの作業者・保全・生産管理", kinmu:"交代勤務が多い"},
+    who:"同じラインで働く作業者、保全担当、生産管理",
+    duties:[
+      "設備を操作して製品をつくる。数量と品質を確認しながら進める",
+      "生産する品目が変わるときの段取り替え（設備の切り替え）",
+      "始業前の点検、日常の清掃と簡単な保全",
+      "異常が出たときの一次対応と、保全担当への連絡",
+      "生産数・不良数の記録、日報の作成",
+      "（リーダー以降）人員配置、新人教育、改善活動の推進"
+    ],
+    day:[
+      ["6:45","出社（早番）。前の直から引き継ぎを受ける"],
+      ["7:00","始業前点検、設備の立ち上げ"],
+      ["7:30","生産開始。数量と品質を確認しながら運転"],
+      ["10:00","休憩。交代で入る"],
+      ["11:00","品目の切り替え。段取り替えを実施"],
+      ["12:00","昼休憩"],
+      ["13:00","生産再開。異常が出れば一次対応と連絡"],
+      ["15:00","生産数と不良数を記録、日報を作成"],
+      ["15:30","次の直へ引き継ぎ、退勤"]
+    ],
+    tools:["製造設備・制御パネル","計測器","生産実績の入力端末","作業手順書","保護具（安全靴・ヘルメット）"],
+    good:["手を動かしてものをつくることに手応えを感じる","決まった時間の中でリズムよく働ける","チームで声を掛け合って動くのが好き"],
+    hard:["交代勤務や夜勤で生活リズムが不規則になる","立ち仕事で、暑さ寒さのある環境の職場もある","同じ作業の繰り返しに感じられる時期がある"],
+    quals:["フォークリフト運転技能講習","危険物取扱者（業種による）","QC検定3級","各種設備の社内資格"],
+    path:["オペレーター","多工程を任される熟練者","班長・ラインリーダー","工程管理・生産管理へ、または製造課長へ"],
+    videos:[
+      {id:"U2NoUK6hgLU", title:"冷凍加工食品製造（job tag 職業紹介動画）", src:"厚生労働省", point:"食品工場の衛生管理の徹底ぶりに注目。同じ「製造」でも業種で環境が大きく違うことが分かる。"},
+      {id:"82WWgGCEaA8", title:"パン製造、パン職人（job tag 職業紹介動画）", src:"厚生労働省", point:"早朝から始まる働き方を確認。製品の性質が勤務時間を決めている例。"},
+      {id:"dC4BYEG8-SY", title:"生産用機械組立（job tag 職業紹介動画）", src:"厚生労働省", point:"食品と違い、1台を組み上げていく仕事。ライン作業と一品生産の違いを比べながら見よう。"}
+    ]
+  },
+  {
+    id:"seizojimu", icon:"🗂️", name:"生産事務・受発注",
+    catch:"工場と取引先のあいだで、注文と書類を正確に動かす",
+    tags:["オフィス勤務","未経験から入りやすい","業界を問わない"],
+    cats:["all","office","hinshitsu"],
+    spec:{kyori:"中くらい（工場内のオフィス）", atsukau:"受発注データ・伝票・納期", aite:"取引先・営業・生産管理", kinmu:"日勤。定時で終わりやすい"},
+    who:"取引先の担当者、社内の営業と生産管理、物流部門",
+    duties:[
+      "受注データの入力、注文内容と在庫・納期の確認",
+      "見積書・注文書・納品書・請求書の作成と発送",
+      "取引先からの納期照会や変更依頼への電話・メール対応",
+      "生産管理・物流への連絡と、出荷指示の手配",
+      "生産実績や出荷データの集計、会議用の資料づくり",
+      "工場内の来客対応、備品管理などの庶務"
+    ],
+    day:[
+      ["8:30","出社。夜間に届いた注文とメールを仕分け"],
+      ["9:00","受注データを基幹システムに入力、在庫と納期を確認"],
+      ["10:30","取引先から納期変更の連絡。生産管理と調整"],
+      ["11:30","見積書と請求書を作成し、上司の承認を取る"],
+      ["12:00","昼休憩"],
+      ["13:00","午後の受注分を処理、出荷指示を出す"],
+      ["15:00","生産実績をExcelで集計、会議用の資料を作成"],
+      ["16:30","翌日の出荷分を最終確認、担当へ引き継ぎ"],
+      ["17:15","退勤（定時で終わりやすい職場が多い）"]
+    ],
+    tools:["Excel（関数・ピボット）","基幹システム／ERP","ビジネスメール","電話","Word"],
+    good:["正確に処理することに達成感がある","人から頼まれる仕事を丁寧に片づけられる","予定の読める働き方をしたい"],
+    hard:["月末と繁忙期に業務が集中する","ミスが納期や金額に直結する緊張感がある","業務範囲が曖昧になりやすく、雑務も回ってくる"],
+    quals:["MOS（Word・Excel）","日商簿記3級","秘書検定","貿易実務検定（輸出がある場合）"],
+    path:["生産事務・受発注担当","チームの中心担当・後輩指導","生産管理や購買へ異動","工場の管理部門、本社の業務部門へ"],
+    videos:[
+      {id:"zUDJb0ryCSQ", title:"営業事務（job tag 職業紹介動画）", src:"厚生労働省", point:"工場の生産事務は、この営業事務に「工場との調整」が加わった形。社内の相手が現場になる点を意識して見よう。"}
+    ]
+  },
+  {
+    id:"boeki", icon:"🚢", name:"貿易・輸出入",
+    catch:"海を越える荷物と書類を、期限どおりに動かす",
+    tags:["オフィス勤務","英語を使う","専門性が高い"],
+    cats:["all","office","nagare","kosho"],
+    spec:{kyori:"中くらい（出荷の現場と連携）", atsukau:"英文書類・通関・船のスケジュール", aite:"海外取引先・船会社・通関業者", kinmu:"日勤。時差対応あり"},
+    who:"海外の取引先、船会社、通関業者、税関、社内の営業と物流",
+    duties:[
+      "輸出入に必要な書類の作成（インボイス、パッキングリストなど）",
+      "海外の取引先とのメールでのやりとり",
+      "船舶や航空便の予約（ブッキング）とスケジュール調整",
+      "通関業者への書類送付と内容の照合",
+      "信用状（L/C）の確認、代金決済の手続き",
+      "輸出入の法規制や関税、原産地証明の確認"
+    ],
+    day:[
+      ["9:00","出社。海外から夜間に届いたメールを確認・返信"],
+      ["10:00","出荷分のインボイスとパッキングリストを作成"],
+      ["11:30","船会社にブッキング、スケジュールを確認"],
+      ["12:00","昼休憩"],
+      ["13:00","通関業者へ書類を送付、内容を照合"],
+      ["14:30","納期変更の連絡を受け、生産管理と倉庫に調整"],
+      ["16:00","書類のファイリング、決済関連の処理"],
+      ["17:30","退勤（船のスケジュールに合わせて変動する）"]
+    ],
+    tools:["Excel","貿易管理システム","英文メール","通関システム連携ツール","Web会議ツール"],
+    good:["英語（特に読み書き）を使う仕事がしたい","細かい書類のチェックが得意","海外や物流の世界に興味がある"],
+    hard:["書類の不備が出荷停止や追加費用に直結する","船や飛行機の遅延など自分では動かせない要因が多い","覚える専門用語と法規制が多い"],
+    quals:["TOEIC（600点〜が目安）","貿易実務検定","通関士（上位資格）","Excel"],
+    path:["貿易事務（書類作成）","一連の輸出入業務を一人で回せる","通関士取得、物流管理へ","海外営業、海外拠点の管理へ"],
+    videos:[
+      {id:"n4FMhnOzRt0", title:"貿易事務（job tag 職業紹介動画）", src:"厚生労働省", point:"扱う書類の種類の多さに注目。英語がどの場面で必要になるかを確認しよう。"},
+      {id:"2LTokzKuryk", title:"通関士（job tag 職業紹介動画）", src:"厚生労働省", point:"貿易事務の先にある専門資格。どこまでを自社でやり、どこから通関業者に任せるかが分かる。"}
+    ]
+  },
+  {
+    id:"genka", icon:"🧮", name:"原価管理・工場経理",
+    catch:"1個つくるのにいくらかかったかを出し、次の判断材料にする",
+    tags:["オフィス勤務","専門性が高い","資格が効く"],
+    cats:["all","office","hinshitsu"],
+    spec:{kyori:"中くらい（工程を知る必要あり）", atsukau:"原価・実績データ・差異分析", aite:"生産管理・現場・本社経理", kinmu:"日勤。月末月初が繁忙"},
+    who:"工場の各部門、生産管理、本社の経理部門",
+    duties:[
+      "製品ごとの原価を計算する（材料費・労務費・経費の集計）",
+      "標準原価と実際原価の差を分析し、原因を突き止める",
+      "月次決算に向けたデータ集計と、工場の損益のとりまとめ",
+      "設備投資や改善活動の効果を金額で試算する",
+      "棚卸資産の評価、棚卸しへの立ち会い",
+      "値上げ交渉や見積の根拠となる原価データの提供"
+    ],
+    day:[
+      ["9:00","出社。前日の生産実績データを取り込み確認"],
+      ["9:30","材料の使用量と実績を突き合わせ、差異を洗い出す"],
+      ["11:00","差異が大きい工程について、現場に状況を聞きに行く"],
+      ["12:00","昼休憩"],
+      ["13:00","製品別の原価を計算し、標準との差を分析"],
+      ["15:00","改善活動の効果を金額に換算して資料にまとめる"],
+      ["16:30","本社経理へ月次データを提出、問い合わせに対応"],
+      ["17:30","退勤（月末月初と決算期は残業が増える）"]
+    ],
+    tools:["Excel（関数・ピボット必須）","原価管理システム／ERP","会計ソフト","生産管理システム","Word・PowerPoint"],
+    good:["数字を合わせることに達成感がある","なぜこの数字になったかを掘るのが面白い","コツコツ積み上げる作業が苦にならない"],
+    hard:["月末月初と決算期に業務が集中する","現場の実態と数字が合わないことが多く、確認に手間がかかる","数字の意味を現場に説明するのに苦労する"],
+    quals:["日商簿記2級（実質必須に近い）","原価計算に関する知識","Excel（データ分析）","FASS検定"],
+    path:["原価計算の担当","製品別の原価と差異分析を担当","工場経理の主任・課長","本社の管理会計、経営企画へ"],
+    videos:[
+      {id:"l3VTrA-6y0M", title:"経理事務（job tag 職業紹介動画）", src:"厚生労働省", point:"経理の基本形。工場の原価管理はこれに「現場の実態を数字に結びつける」作業が加わる、と考えて見よう。"}
+    ]
+  },
+  {
+    id:"kojinji", icon:"👥", name:"工場人事・総務・安全衛生",
+    catch:"人と設備が安全に動き続ける状態をつくる",
+    tags:["オフィス勤務","現場と関わる","業界を問わない"],
+    cats:["all","office","genba"],
+    spec:{kyori:"近い（現場の人と日常的に接する）", atsukau:"採用・勤怠・安全・設備", aite:"工場の全従業員・行政・地域", kinmu:"日勤。交代勤務者への対応あり"},
+    who:"工場で働く全員、応募者、労働基準監督署、地域住民",
+    duties:[
+      "現場スタッフの採用（求人、面接の日程調整、受け入れ）",
+      "交代勤務を含む勤怠データの集計、給与計算の補助",
+      "安全衛生委員会の運営、労災が起きたときの報告と対策",
+      "安全教育、健康診断、作業環境測定の手配",
+      "工場の設備・備品の管理、清掃や食堂の運営",
+      "地域への対応（騒音・臭気の相談、工場見学の受け入れ）"
+    ],
+    day:[
+      ["8:30","出社。応募者からの連絡と当日の予定を確認"],
+      ["9:00","現場をまわり、働く環境で困っていることを聞く"],
+      ["10:00","面接の実施と、入社予定者の受け入れ準備"],
+      ["11:30","交代勤務の勤怠データをチェック、部署へ差し戻し"],
+      ["12:00","昼休憩"],
+      ["13:00","安全衛生委員会。ヒヤリハット事例を共有し対策を決める"],
+      ["15:00","健康診断の手配、保護具の発注"],
+      ["16:30","従業員からの相談対応、翌日の準備"],
+      ["17:30","退勤（4月の入社時期と繁忙期の採用で忙しくなる）"]
+    ],
+    tools:["人事・勤怠管理システム","給与計算ソフト","Excel","採用管理システム","Word（規程・報告書）"],
+    good:["いろいろな立場の人と話すのが苦にならない","人が働きやすい環境をつくることに関心がある","秘密を守れる、口が堅い"],
+    hard:["労災やトラブルが起きたときの責任と対応の重さ","現場と会社の方針の間で板挟みになることがある","業務範囲が広く、突発的な対応が多い"],
+    quals:["衛生管理者（第一種・第二種）","給与計算実務能力検定","社会保険労務士（上位資格）","Excel"],
+    path:["工場人事・総務の担当","採用や労務の専門担当","工場管理部門の主任・課長","本社人事、安全衛生の統括へ"],
+    videos:[
+      {id:"F9f1LvoZfTs", title:"人事事務（job tag 職業紹介動画）", src:"厚生労働省", point:"人事の基本形。工場では交代勤務の勤怠管理と安全衛生の比重が、本社人事よりずっと大きくなる。"}
+    ]
+  }
+];
+
+const RELATED = [
+  {name:"半導体製造", id:"2cQG5naGjKI", note:"クリーンルームでの製造。設備が主役の職場の様子が分かる。"},
+  {name:"化粧品製造", id:"p1ZEo3IiI-Q", note:"消費財の工場。衛生管理とロット管理の厳しさに注目。"},
+  {name:"印刷オペレーター", id:"beV6KrXbsKQ", note:"短納期・多品種の現場。段取り替えの多さが分かる。"}
+];
+
+/* 比較表: [現場との近さ, 数字, 社外交渉, 専門知識, 交代勤務の可能性] 1-5 */
+const CMP = {
+  seikan:    {v:[4,5,3,3,1], ba:"工場（一部は本社）", q:"Excel／簿記3級"},
+  kobai:     {v:[3,5,5,3,1], ba:"本社・工場", q:"簿記3級／TOEIC"},
+  hinshitsu: {v:[4,3,3,5,2], ba:"工場", q:"QC検定2級・3級"},
+  butsuryu:  {v:[5,3,3,2,3], ba:"工場・物流センター", q:"フォークリフト／物流技術管理士"},
+  seizo:     {v:[5,2,1,3,5], ba:"工場", q:"危険物／フォークリフト"},
+  seizojimu: {v:[2,3,3,2,1], ba:"工場のオフィス", q:"MOS／簿記3級"},
+  boeki:     {v:[2,3,4,5,1], ba:"本社・工場", q:"TOEIC／貿易実務検定"},
+  genka:     {v:[3,5,1,4,1], ba:"工場", q:"日商簿記2級"},
+  kojinji:   {v:[4,3,2,3,1], ba:"工場", q:"衛生管理者"}
+};
+
+/* 診断 */
+const QUIZ = [
+  {
+    q:"作業服を着てラインに入る仕事、どう感じる？",
+    opts:[
+      {t:"手を動かしてつくるほうが手応えがある", s:{seizo:4, butsuryu:3}},
+      {t:"現場には行きたいが、立場は管理する側がいい", s:{seikan:4, hinshitsu:3, kojinji:3}},
+      {t:"できればオフィスで数字や書類を扱いたい", s:{genka:4, seizojimu:3, boeki:3, kobai:2}}
+    ]
+  },
+  {
+    q:"社外の人と交渉する仕事は？",
+    opts:[
+      {t:"価格や納期を交渉するのは面白そう", s:{kobai:4, boeki:2}},
+      {t:"海外の相手と英語でやりとりしたい", s:{boeki:4, kobai:1}},
+      {t:"社内の人と連携するほうが向いている", s:{seikan:3, genka:3, kojinji:3, seizojimu:2}}
+    ]
+  },
+  {
+    q:"数字との付き合い方、正直どう？",
+    opts:[
+      {t:"1円・1個の差を突き止めるのが好き", s:{genka:4, kobai:2, hinshitsu:2}},
+      {t:"計画を立てて数を合わせるのが面白い", s:{seikan:4, butsuryu:2}},
+      {t:"数字は必要な分だけでいい。人や物と向き合いたい", s:{seizo:3, kojinji:3, butsuryu:2}}
+    ]
+  },
+  {
+    q:"勤務時間について、正直なところは？",
+    opts:[
+      {t:"交代勤務や夜勤でも構わない。手当があるならなお良い", s:{seizo:4, butsuryu:2}},
+      {t:"日勤で、予定が読める働き方がいい", s:{seizojimu:4, genka:3, boeki:2, kojinji:2}},
+      {t:"日勤中心だが、トラブル対応で動くのは構わない", s:{seikan:3, hinshitsu:3, kobai:2}}
+    ]
+  },
+  {
+    q:"どんなことで「役に立った」と感じたい？",
+    opts:[
+      {t:"納期どおりに届けられたこと", s:{seikan:4, butsuryu:3, seizojimu:2}},
+      {t:"不良やトラブルを防げたこと", s:{hinshitsu:4, kojinji:2}},
+      {t:"コストを下げて会社の利益を残せたこと", s:{kobai:4, genka:3}},
+      {t:"一緒に働く人が安心して働けること", s:{kojinji:4, seizo:2}}
+    ]
+  }
+];
+
+const dots = n => '<span class="dots">' + '●'.repeat(n) + '<i>' + '●'.repeat(5-n) + '</i></span>';
+
+const FILTERS = [
+  {key:"all", label:"すべて（9職種）"},
+  {key:"office", label:"オフィス勤務が中心"},
+  {key:"genba", label:"現場に近い"},
+  {key:"nagare", label:"モノの流れをつくる"},
+  {key:"hinshitsu", label:"品質と数字を守る"},
+  {key:"kosho", label:"社外との交渉がある"}
+];
+
+function renderFilters(){
+  document.getElementById("filters").innerHTML = FILTERS.map((f,i)=>
+    `<button class="chip" data-f="${f.key}" aria-pressed="${i===0}">${f.label}</button>`
+  ).join("");
+  document.querySelectorAll("#filters .chip").forEach(b=>{
+    b.addEventListener("click", ()=>{
+      document.querySelectorAll("#filters .chip").forEach(x=>x.setAttribute("aria-pressed","false"));
+      b.setAttribute("aria-pressed","true");
+      const k = b.dataset.f;
+      document.querySelectorAll(".job").forEach(j=>{
+        j.classList.toggle("hidden", !j.dataset.cats.split(",").includes(k));
+      });
+    });
+  });
+}
+
+function jobHTML(j){
+  return `
+  <article class="job" id="job-${j.id}" data-cats="${j.cats.join(",")}" open-state="0">
+    <div class="job-head" data-toggle="${j.id}">
+      <div class="job-badge">${j.icon}</div>
+      <div class="job-titles">
+        <h3>${j.name}</h3>
+        <div class="catch">${j.catch}</div>
+        <div class="job-tags">${j.tags.map(t=>`<span>${t}</span>`).join("")}</div>
+      </div>
+      <div class="toggle">くわしく見る <span class="arw">▾</span></div>
+    </div>
+    <div class="job-body">
+      <div class="blk" style="margin-top:1.2rem">
+        <h5>▍職務プロフィール（この仕事の型）</h5>
+        <div class="spec">
+          <div class="specbox"><b>現場との距離</b><span>${j.spec.kyori}</span></div>
+          <div class="specbox"><b>扱うもの</b><span>${j.spec.atsukau}</span></div>
+          <div class="specbox"><b>一緒に働く相手</b><span>${j.spec.aite}</span></div>
+          <div class="specbox"><b>勤務の特徴</b><span>${j.spec.kinmu}</span></div>
+        </div>
+      </div>
+      <div class="split">
+        <div>
+          <div class="blk">
+            <h5>▍誰と仕事をするか</h5>
+            <p>${j.who}</p>
+          </div>
+          <div class="blk">
+            <h5>▍具体的にやること</h5>
+            <ul>${j.duties.map(d=>`<li>${d}</li>`).join("")}</ul>
+          </div>
+          <div class="blk">
+            <h5>▍ある1日の流れ（例）</h5>
+            <ul class="timeline">${j.day.map(d=>`<li><span class="t">${d[0]}</span><span>${d[1]}</span></li>`).join("")}</ul>
+          </div>
+          <div class="blk">
+            <h5>▍よく使うツール</h5>
+            <div class="tools">${j.tools.map(t=>`<span>${t}</span>`).join("")}</div>
+          </div>
+          <div class="blk">
+            <h5>▍向き・大変さ</h5>
+            <div class="fit">
+              <div class="fitbox fit-good"><h6>こんな人に向く</h6><ul>${j.good.map(g=>`<li>${g}</li>`).join("")}</ul></div>
+              <div class="fitbox fit-hard"><h6>ここは覚悟が要る</h6><ul>${j.hard.map(h=>`<li>${h}</li>`).join("")}</ul></div>
+            </div>
+          </div>
+          <div class="blk">
+            <h5>▍役立つ資格</h5>
+            <div class="tools">${j.quals.map(q=>`<span>${q}</span>`).join("")}</div>
+          </div>
+          <div class="blk">
+            <h5>▍キャリアの伸ばし方</h5>
+            <div class="path">${j.path.map((p,i)=> (i? '<i>→</i>':'') + `<span>${p}</span>`).join("")}</div>
+          </div>
+        </div>
+        <div>
+          <div class="blk">
+            <h5>▍動画で見る</h5>
+            <div class="videos">
+              ${j.videos.map(v=>`
+                <div class="vid">
+                  <div class="vtitle">${v.title}</div>
+                  <div class="vmeta">出典：<b>${v.src}</b></div>
+                  <div class="ratio">
+                    <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${v.id}?rel=0"
+                      title="${v.title}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="vpoint"><b>見るポイント：</b>${v.point}</div>
+                </div>`).join("")}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>`;
+}
+
+function renderJobs(){
+  document.getElementById("jobsList").innerHTML = JOBS.map(jobHTML).join("") + `
+    <article class="job" data-cats="all,office,genba,nagare,hinshitsu,kosho" open-state="0" id="job-related">
+      <div class="job-head" data-toggle="related" style="border-left-color:#7b8794">
+        <div class="job-badge" style="background:#eeece7;color:#52606d">➕</div>
+        <div class="job-titles">
+          <h3>あわせて見ておきたい現場の動画</h3>
+          <div class="catch">業種によって工場の環境がどれだけ違うかを比べる</div>
+        </div>
+        <div class="toggle">くわしく見る <span class="arw">▾</span></div>
+      </div>
+      <div class="job-body">
+        <div class="blk" style="margin-top:1.2rem">
+          <h5>▍動画で見る</h5>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem">
+            ${RELATED.map(r=>`
+              <div class="vid">
+                <div class="vtitle">${r.name}（job tag 職業紹介動画）</div>
+                <div class="vmeta">出典：<b>厚生労働省</b></div>
+                <div class="ratio">
+                  <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${r.id}?rel=0"
+                    title="${r.name}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="vpoint"><b>見るポイント：</b>${r.note}</div>
+              </div>`).join("")}
+          </div>
+        </div>
+      </div>
+    </article>`;
+
+  document.querySelectorAll(".job-head").forEach(h=>{
+    h.addEventListener("click", ()=>{
+      const art = h.closest(".job");
+      const open = art.getAttribute("open-state") === "1";
+      art.setAttribute("open-state", open ? "0" : "1");
+      h.querySelector(".toggle").firstChild.nodeValue = open ? "くわしく見る " : "閉じる ";
+    });
+  });
+}
+
+function renderCmp(){
+  document.getElementById("cmpBody").innerHTML = JOBS.map(j=>{
+    const c = CMP[j.id];
+    return `<tr>
+      <td class="jobname"><a href="#job-${j.id}" style="text-decoration:none">${j.icon} ${j.name}</a></td>
+      <td>${dots(c.v[0])}</td><td>${dots(c.v[1])}</td><td>${dots(c.v[2])}</td>
+      <td>${dots(c.v[3])}</td><td>${dots(c.v[4])}</td>
+      <td>${c.ba}</td><td>${c.q}</td>
+    </tr>`;
+  }).join("");
+}
+
+function renderQuiz(){
+  document.getElementById("quizBody").innerHTML = QUIZ.map((q,i)=>`
+    <div class="q" data-qi="${i}">
+      <p><b>Q${i+1}.</b>${q.q}</p>
+      <div class="opts">${q.opts.map((o,k)=>`<button data-qi="${i}" data-oi="${k}" aria-pressed="false">${o.t}</button>`).join("")}</div>
+    </div>`).join("");
+
+  document.querySelectorAll("#quizBody .opts button").forEach(b=>{
+    b.addEventListener("click", ()=>{
+      document.querySelectorAll(`#quizBody .opts button[data-qi="${b.dataset.qi}"]`)
+        .forEach(x=>x.setAttribute("aria-pressed","false"));
+      b.setAttribute("aria-pressed","true");
+    });
+  });
+}
+
+document.getElementById("calcBtn").addEventListener("click", ()=>{
+  const score = {};
+  JOBS.forEach(j=>score[j.id]=0);
+  let answered = 0;
+  document.querySelectorAll('#quizBody .opts button[aria-pressed="true"]').forEach(b=>{
+    answered++;
+    const s = QUIZ[+b.dataset.qi].opts[+b.dataset.oi].s;
+    for (const k in s) score[k] += s[k];
+  });
+  const res = document.getElementById("result");
+  if (answered === 0){
+    res.innerHTML = `<p class="note">まず質問に答えてみてください。</p>`;
+    res.classList.add("show"); return;
+  }
+  const top = Object.entries(score).sort((a,b)=>b[1]-a[1]).slice(0,3);
+  res.innerHTML = `
+    <h4 style="margin:0 0 .7rem;font-size:1.05rem">あなたと相性がよさそうな職種</h4>
+    ${top.map(([id],i)=>{
+      const j = JOBS.find(x=>x.id===id);
+      return `<div class="rescard">
+        <div class="rank">${["最も相性が良さそう","次に見てみたい","こちらも候補に"][i]}</div>
+        <h4>${j.icon} ${j.name}</h4>
+        <p>${j.catch}</p>
+        <a href="#job-${j.id}" onclick="openJob('${j.id}')">→ この職種の詳細と動画を見る</a>
+      </div>`;
+    }).join("")}
+    ${answered < QUIZ.length ? `<p class="note">※ ${QUIZ.length}問中${answered}問の回答です。すべて答えると精度が上がります。</p>` : ""}
+    <p class="note">この結果は「向いていない職種を消す」ためのものではありません。上位に出た職種の動画を見て、<strong>1日の流れを自分ごととして想像できるか</strong>で判断してください。</p>`;
+  res.classList.add("show");
+  res.scrollIntoView({behavior:"smooth", block:"nearest"});
+});
+
+document.getElementById("resetBtn").addEventListener("click", ()=>{
+  document.querySelectorAll("#quizBody .opts button").forEach(b=>b.setAttribute("aria-pressed","false"));
+  const r = document.getElementById("result"); r.classList.remove("show"); r.innerHTML="";
+});
+
+function openJob(id){
+  document.querySelectorAll("#filters .chip").forEach((x,i)=>x.setAttribute("aria-pressed", i===0 ? "true" : "false"));
+  document.querySelectorAll(".job").forEach(j=>j.classList.remove("hidden"));
+  const art = document.getElementById("job-"+id);
+  if(!art) return;
+  art.setAttribute("open-state","1");
+  art.querySelector(".toggle").firstChild.nodeValue = "閉じる ";
+}
+window.openJob = openJob;
+
+document.querySelectorAll(".zoomctl button").forEach(b=>{
+  b.addEventListener("click", ()=>{
+    document.querySelectorAll(".zoomctl button").forEach(x=>x.setAttribute("aria-pressed","false"));
+    b.setAttribute("aria-pressed","true");
+    document.documentElement.dataset.zoom = b.dataset.zoom;
+  });
+});
+
+renderGyoshu();
+renderFilters();
+renderJobs();
+renderCmp();
+renderQuiz();
+
+/* ========== 実在企業 ========== */
+const COMPANIES=[["製造業","タカラスタンダード","ホーロー製のシステムキッチンや浴室など住宅設備の製造","大阪府大阪市","あり","大手"],["製造業","ワコール","女性用下着・インナーウェアの企画と製造","京都府京都市","あり","大手"],["製造業","ファンケル","無添加化粧品とサプリメントの製造・販売","神奈川県横浜市","あり","大手"],["製造業","住友大阪セメント","セメントと建材、光電子材料の製造","東京都千代田区","あり","大手"],["製造業","不二越","ベアリング、切削工具、産業用ロボットの製造","富山県富山市","あり","大手"],["製造業","リンナイ","給湯器、ガスコンロなど熱エネルギー機器の製造","愛知県名古屋市","あり","大手"],["製造業","文化シヤッター","シャッター、ドア、窓の製造と施工","東京都文京区","あり","大手"],["製造業","デサント","デサント、ルコックなどスポーツウェアの企画と製造","大阪府大阪市","あり","大手"],["製造業","GSユアサ","自動車用・産業用の蓄電池、リチウムイオン電池の製造","京都府京都市","あり","大手"],["製造業","NTN","軸受（ベアリング）と等速ジョイントの製造","大阪府大阪市","あり","大手"],["製造業","TMEIC","産業用の電機システム、モーター、インバータの製造","東京都中央区","あり","大手"],["製造業","いすゞ自動車","トラック・バスとディーゼルエンジンの製造","神奈川県横浜市","あり","大手"],["製造業","アイリスオーヤマ","生活用品・家電の企画から製造・販売までを一貫","宮城県仙台市","あり","大手"],["製造業","アマノ","就業管理システム、駐車場システム、環境機器の製造","神奈川県横浜市","あり","大手"],["製造業","エスケー化研","建築用の塗料・仕上塗材の製造","大阪府茨木市","あり","大手"],["製造業","オリエンタルモーター","小型モーターと駆動制御機器の製造","東京都台東区","あり","大手"],["製造業","カナデビア","環境プラント、機械、インフラ設備の製造（旧・日立造船）","大阪府大阪市","あり","大手"],["製造業","カヤバ","油圧機器、ショックアブソーバの製造（旧・KYB）","東京都港区","あり","大手"],["製造業","キヤノンメディカルシステムズ","CT・MRIなど医用画像診断装置の製造と販売","栃木県大田原市","あり","大手"],["製造業","グローリー","通貨処理機、自動釣銭機、認証システムの製造","兵庫県姫路市","あり","大手"],["製造業","コベルコ建機","油圧ショベル、クレーンなど建設機械の製造","東京都品川区","あり","大手"],["製造業","ゴールドウイン","ザ・ノース・フェイス等スポーツウェアの企画・製造・販売","富山県小矢部市","あり","大手"],["製造業","サッポロビール","ビール、RTDなど酒類の製造と販売","東京都渋谷区","あり","大手"],["製造業","サトー","バーコードプリンタ、ラベルなど自動認識機器の製造","東京都港区","あり","大手"],["製造業","シークス","電子機器の受託製造（EMS）とグローバル調達","大阪府大阪市","あり","大手"],["製造業","シャープ","家電、ディスプレイ、電子デバイスの製造","大阪府堺市","あり","大手"],["製造業","ジェイテクト","ステアリング、軸受、工作機械の製造","愛知県刈谷市","あり","大手"],["製造業","ジーシー","歯科材料・歯科機器の製造","東京都文京区","あり","大手"],["製造業","スズキ","自動車と二輪車の製造","静岡県浜松市","あり","大手"],["製造業","セガ","家庭用・アーケードゲームの開発と販売","東京都品川区","限定的","大手"],["製造業","ダイキン工業","空調機器、フッ素化学製品の製造","大阪府大阪市","あり","大手"],["製造業","ダイハツ工業","軽自動車を中心とした自動車の製造","大阪府池田市","あり","大手"],["製造業","テルモ","カテーテル、輸液ポンプなど医療機器の製造","東京都渋谷区","あり","大手"],["製造業","デンソー","自動車部品・電装システムの製造","愛知県刈谷市","あり","大手"],["製造業","ニコン","カメラ、半導体露光装置、測定機器の製造","東京都港区","限定的","大手"],["製造業","ニチアス","断熱材、シール材など工業用材料の製造","東京都中央区","あり","大手"],["製造業","フジパングループ本社","本仕込などパン・菓子の製造と販売","愛知県名古屋市","あり","大手"],["製造業","フランスベッド","ベッド、家具と介護用品の製造・レンタル","東京都新宿区","あり","大手"],["製造業","マツダ","自動車の製造","広島県安芸郡","あり","大手"],["製造業","ミネベアミツミ","ベアリング、電子部品、モーターの製造","東京都中央区","あり","大手"],["製造業","モリタホールディングス","消防車、防災機器の製造","大阪府大阪市","あり","大手"],["製造業","モンベル","アウトドア用品の企画・製造・販売","大阪府大阪市","あり","大手"],["製造業","ヤンマーホールディングス","農業機械、建設機械、産業用エンジンの製造","大阪府大阪市","あり","大手"],["製造業","リブドゥコーポレーション","大人用紙おむつなど医療・介護用品の製造","大阪府大阪市","あり","大手"],["製造業","三井化学","石油化学製品、機能性材料の製造","東京都中央区","あり","大手"],["製造業","三協立山","アルミ建材（サッシ・エクステリア）の製造","富山県高岡市","あり","大手"],["製造業","三和シヤッター工業","シャッター、ドア、間仕切りの製造と施工","東京都板橋区","あり","大手"],["製造業","三浦工業","産業用ボイラと水処理機器の製造・メンテナンス","愛媛県松山市","あり","大手"],["製造業","三菱製鋼","特殊鋼、ばね、素形材の製造","東京都中央区","あり","大手"],["製造業","三菱電機","重電、産業メカトロ、家電、電子デバイスの製造","東京都千代田区","あり","大手"],["製造業","不二製油","チョコレート用油脂、大豆素材など食品素材の製造","大阪府泉佐野市","あり","大手"],["製造業","丸大食品","ハム・ソーセージ、惣菜など食肉加工品の製造","大阪府高槻市","あり","大手"],["製造業","京セラ","セラミック部品、電子部品、通信機器の製造","京都府京都市","あり","大手"],["製造業","京セラドキュメントソリューションズ","複合機・プリンタの開発と製造","大阪府大阪市","あり","大手"],["製造業","伊藤園","お～いお茶など飲料の製造と販売","東京都渋谷区","あり","大手"],["製造業","住友電装","自動車用ワイヤーハーネス、電装部品の製造","三重県四日市市","あり","大手"],["製造業","大和製罐","飲料缶、食品缶など金属容器の製造","東京都千代田区","あり","大手"],["製造業","大塚製薬","医療用医薬品とポカリスエット等の栄養食品の製造","東京都千代田区","あり","大手"],["製造業","大陽日酸","産業ガス、医療ガスの製造と供給","東京都品川区","あり","大手"],["製造業","太平洋セメント","セメント、生コンクリート、資源の製造","東京都文京区","あり","大手"],["製造業","山崎製パン","食パン、菓子パン、和洋菓子の製造","東京都千代田区","あり","大手"],["製造業","帝人","炭素繊維、樹脂、ヘルスケア製品の製造","大阪府大阪市","あり","大手"],["製造業","日東工業","配電盤、キャビネットなど電気設備の製造","愛知県長久手市","あり","大手"],["製造業","日東電工","光学フィルム、テープなど機能性材料の製造","大阪府大阪市","あり","大手"],["製造業","明治","乳製品、菓子、栄養食品の製造","東京都中央区","あり","大手"],["製造業","村田製作所","セラミックコンデンサなど電子部品の製造","京都府長岡京市","あり","大手"],["製造業","東芝テック","POSシステム、複合機の製造","東京都品川区","あり","大手"],["製造業","森永乳業","牛乳、ヨーグルト、アイスなど乳製品の製造","東京都港区","あり","大手"],["製造業","矢崎総業","自動車用ワイヤーハーネス、計器類の製造","東京都港区","あり","大手"],["製造業","神戸製鋼所","鉄鋼、アルミ、機械、建設機械の製造","兵庫県神戸市","あり","大手"],["製造業","芝浦機械","射出成形機、工作機械の製造","静岡県沼津市","あり","大手"],["製造業","豊田自動織機","繊維機械、フォークリフト、自動車部品の製造","愛知県刈谷市","あり","大手"],["製造業","クリナップ","システムキッチンと洗面化粧台の製造","東京都荒川区","あり","中堅"],["製造業","アイコム","アマチュア無線機や業務用無線機の開発と製造","大阪府大阪市","あり","中堅"],["製造業","だいわ","","","あり","中堅"],["製造業","十川ゴム","産業用ゴムホースとゴム製品の製造","大阪府大阪市","あり","中堅"],["製造業","スワロー電機","変圧器（トランス）と電源機器の製造","大阪府大阪市","あり","中堅"],["製造業","友電舎","","","あり","中堅"],["製造業","日本特殊管製作所","特殊鋼管と配管部材の製造","大阪府","あり","中堅"],["製造業","コニシ","ボンドブランドの接着剤と建設用材料の製造","大阪府大阪市","あり","中堅"],["製造業","エレコム","PC周辺機器やスマホアクセサリの企画と販売","大阪府大阪市","あり","中堅"],["製造業","ナカバヤシ","アルバム、ファイルなど紙製品の製造と製本","大阪府大阪市","あり","中堅"],["製造業","永大産業","住宅用の床材、建具など内装建材の製造","大阪府大阪市","あり","中堅"],["製造業","佐藤薬品工業","医薬品と健康食品の受託製造","奈良県橿原市","あり","中堅"],["製造業","フルタ製菓","セコイヤチョコレートなど菓子の製造","大阪府大阪市","あり","中堅"],["製造業","アジュバンホールディングス","美容室向けのヘアケア・スキンケア製品の製造","兵庫県芦屋市","あり","中堅"],["製造業","リヒトラブ","ファイルやバインダーなど事務用品の製造","大阪府大阪市","あり","中堅"],["製造業","ジャクエツ","遊具・保育用品の製造と園の環境デザイン","福井県敦賀市","あり","中堅"],["製造業","ライオン事務器","オフィス家具と文具の製造・販売","東京都中央区","あり","中堅"],["製造業","コロンビアスポーツウェアジャパン","アウトドアウェアの日本での企画と販売","東京都港区","あり","中堅"],["製造業","AGC硝子建材","AGCグループの建築用ガラス・建材の販売","東京都千代田区","あり","中堅"],["製造業","TONE","トルクレンチなど作業工具の製造","大阪府河内長野市","あり","中堅"],["製造業","アイア","レディースアパレルの企画・製造・販売","東京都渋谷区","あり","中堅"],["製造業","ジェイテクトマシンシステム","工作機械と自動化装置の製造","","あり","中堅"],["製造業","スミノエインテリアプロダクツ","住江織物グループのインテリア製品の製造・販売","","あり","中堅"],["製造業","タイガー魔法瓶","魔法瓶、炊飯器など調理家電の製造","大阪府門真市","あり","中堅"],["製造業","デサントジャパン","デサント、ルコックなどスポーツウェアの企画・販売","東京都豊島区","あり","中堅"],["製造業","ニチレキグループ","道路舗装材料の製造と道路工事","東京都千代田区","あり","中堅"],["製造業","ネグロス電工","電設資材（配管・配線支持金具）の製造","大阪府大阪市","あり","中堅"],["製造業","パイン","パインアメなどキャンディの製造","大阪府大阪市","あり","中堅"],["製造業","ホギメディカル","手術用キット、不織布など医療用材料の製造","東京都港区","あり","中堅"],["製造業","マスプロ電工","アンテナ、受信システムなど電波機器の製造","愛知県日進市","あり","中堅"],["製造業","マリークヮントコスメチックス","英国発ブランドの化粧品の企画と販売","東京都港区","あり","中堅"],["製造業","メガチップス","LSI（システム半導体）の設計・開発","大阪府大阪市","あり","中堅"],["製造業","ヤーマン","美容機器、化粧品の開発と販売","東京都江東区","あり","中堅"],["製造業","ヨータイ","製鉄・セメント向け耐火物の製造","大阪府貝塚市","あり","中堅"],["製造業","ロックペイント","自動車補修用・建築用塗料の製造","大阪府大阪市","あり","中堅"],["製造業","三菱重工冷熱","業務用空調・冷熱設備の販売と施工","東京都千代田区","あり","中堅"],["製造業","味覚糖","ぷっちょ、e-maのど飴などの菓子の製造","大阪府大阪市","あり","中堅"],["製造業","大日本塗料","構造物用、工業用の塗料の製造","大阪府大阪市","あり","中堅"],["製造業","大阪チタニウムテクノロジーズ","スポンジチタン、高機能材料の製造","大阪府岸和田市","あり","中堅"],["製造業","寺崎電気産業","船舶用・産業用の配電制御機器の製造","大阪府大阪市","あり","中堅"],["製造業","島精機製作所","ホールガーメント横編機、デザインシステムの製造","和歌山県和歌山市","あり","中堅"],["製造業","日本伸銅","銅・銅合金の板や条の製造","大阪府堺市","あり","中堅"],["製造業","日鉄鋼板","屋根・壁材向けの表面処理鋼板の製造","東京都港区","あり","中堅"],["製造業","旭ダイヤモンド工業","ダイヤモンド工具、CBN工具の製造","東京都千代田区","あり","中堅"],["製造業","東リ","床材、カーテンなどインテリア建材の製造","兵庫県伊丹市","あり","中堅"],["製造業","東レ・メディカル","人工腎臓、透析装置など医療機器の販売とサービス","東京都中央区","あり","中堅"],["製造業","浅野歯車工作所","船舶用・産業用の歯車と減速機の製造","大阪府大阪市","あり","中堅"],["製造業","牛乳石鹸共進社","石鹸、ボディソープなど日用品の製造","大阪府大阪市","あり","中堅"],["製造業","創味食品","業務用・家庭用の調味料の製造","京都府京都市","あり","地域"],["製造業","日世","ソフトクリームのミックスとコーンの製造","大阪府茨木市","あり","地域"],["情報通信業","Sky","業務系ソフトとICT教育システムの開発","大阪府大阪市","あり","大手"],["情報通信業","トランス・コスモス","コールセンター運営とデジタルマーケティングの受託","東京都豊島区","あり","大手"],["情報通信業","キヤノンITソリューションズ","システム開発とITインフラの構築・運用","東京都港区","あり","大手"],["情報通信業","ダイワボウ情報システム","ITインフラ商材の卸と導入支援","大阪府大阪市","あり","大手"],["情報通信業","日本アイ・ビー・エムデジタルサービス","IBMグループのシステム運用とBPO","東京都中央区","あり","大手"],["情報通信業","JCOM","ケーブルテレビとインターネット、モバイルの提供","東京都千代田区","あり","大手"],["情報通信業","KDDI","auブランドの通信事業と法人向けソリューション","東京都千代田区","あり","大手"],["情報通信業","NECネクサソリューションズ","中堅・中小企業向けのITシステムの構築と運用","東京都港区","あり","大手"],["情報通信業","NECネッツエスアイ","ネットワークの構築と運用、オフィス環境の整備","東京都文京区","あり","大手"],["情報通信業","NECフィールディング","ITシステムの保守とヘルプデスク、運用支援","東京都港区","あり","大手"],["情報通信業","NTT西日本","西日本エリアの固定通信とICTソリューション","大阪府大阪市","あり","大手"],["情報通信業","USEN-NEXT HOLDINGS","店舗向けBGM・POSと動画配信U-NEXTの運営","東京都品川区","あり","大手"],["情報通信業","インターネットイニシアティブ","法人向けインターネット接続とネットワーク構築","東京都千代田区","あり","大手"],["情報通信業","エクシオグループ","通信インフラの設計・施工と都市インフラ整備","東京都渋谷区","あり","大手"],["情報通信業","ソフトバンク","携帯通信事業と法人向けのDXソリューション","東京都港区","あり","大手"],["情報通信業","テクノプロ・IT","IT技術者の派遣と受託開発","東京都港区","あり","大手"],["情報通信業","ミライト・ワン","通信建設。情報通信インフラの設計・施工","東京都江東区","あり","大手"],["情報通信業","三菱電機ソフトウエア","三菱電機グループのソフトウェア開発","東京都中央区","あり","大手"],["情報通信業","伊藤忠テクノソリューションズ","大手SIer。インフラ構築とシステム開発","東京都港区","あり","大手"],["情報通信業","富士ソフト","独立系の大手SIer。組込みから業務系まで開発","神奈川県横浜市","あり","大手"],["情報通信業","帝国データバンク","企業信用調査と企業情報データベースの提供","東京都港区","あり","大手"],["情報通信業","日本コムシス","通信建設。通信インフラと社会インフラの構築","東京都品川区","あり","大手"],["情報通信業","日本放送協会","NHK。公共放送の番組制作と送出","東京都渋谷区","あり","大手"],["情報通信業","CTCシステムマネジメント","ITインフラの運用・保守とヘルプデスク","東京都豊島区","あり","中堅"],["情報通信業","NTTデータ・ビジネス・システムズ","中堅企業向けの基幹システムの構築と運用","東京都江東区","限定的","中堅"],["情報通信業","ソフトウェア・サービス","医療機関向けの電子カルテシステムの開発","大阪府大阪市","あり","中堅"],["情報通信業","EMシステムズ","調剤薬局や医療機関向けシステムの開発","大阪府大阪市","あり","中堅"],["情報通信業","ニーズウェル","業務システムの受託開発と運用","東京都千代田区","あり","中堅"],["情報通信業","NSW","製造業向けを中心としたシステム開発と運用","東京都渋谷区","あり","中堅"],["情報通信業","NTTデータ関西","自治体・医療・企業向けのシステム開発（西日本）","大阪府大阪市","あり","中堅"],["情報通信業","TISソリューションリンク","TISグループのシステム開発と運用","東京都新宿区","あり","中堅"],["情報通信業","アルファシステムズ","通信・公共分野のソフトウェア開発","神奈川県川崎市","限定的","中堅"],["情報通信業","カプコン","家庭用ゲームソフトの開発と販売","大阪府大阪市","あり","中堅"],["情報通信業","クリーク・アンド・リバー社","クリエイター専門の人材エージェントと制作","東京都港区","あり","中堅"],["情報通信業","サイバーコム","通信・制御分野を中心としたソフトウェア開発","東京都新宿区","あり","中堅"],["情報通信業","デジタル・インフォメーション・テクノロジー","システム開発とWebセキュリティ製品の提供","東京都中央区","あり","中堅"],["情報通信業","ミロク情報サービス","会計事務所と中小企業向けの会計システム","東京都新宿区","あり","中堅"],["情報通信業","中央出版ホールディングス","教材の出版と教育サービスの運営","愛知県名古屋市","あり","中堅"],["情報通信業","味の素コミュニケーションズ","味の素グループの広告・販促の企画制作","東京都中央区","限定的","中堅"],["情報通信業","富士フイルムシステムサービス","自治体向けのBPOとシステム開発","東京都港区","あり","中堅"],["情報通信業","日本情報産業","業務システムの受託開発と運用","東京都港区","あり","中堅"],["情報通信業","日立システムズエンジニアリングサービス","日立グループのシステム構築と保守運用","神奈川県横浜市","あり","中堅"],["情報通信業","旭情報サービス","システム開発と運用、ネットワーク構築","東京都千代田区","あり","中堅"],["情報通信業","東映アニメーション","テレビアニメと劇場アニメの企画制作","東京都中野区","限定的","中堅"],["情報通信業","JIPテクノサイエンス","土木・建設分野向けの技術計算ソフトとシステム開発","大阪府大阪市","あり","地域"],["情報通信業","アイル","流通・小売業向けの基幹システムとEC支援","大阪府大阪市","あり","地域"],["情報通信業","オプテージ","関西電力系の通信事業。eo光とmineoを提供","大阪府大阪市","あり","地域"],["情報通信業","ミクロ情報サービス","業務システムの受託開発と運用","","あり","地域"],["情報通信業","ユニバーサルコンピューター","業務システムの受託開発と運用","","あり","地域"],["情報通信業","三重テレビ放送","三重県のテレビ放送局","三重県津市","なし","地域"],["情報通信業","奈良新聞社","奈良県の地方新聞の発行","奈良県奈良市","あり","地域"],["情報通信業","紀陽情報システム","紀陽銀行グループのシステム開発と運用","和歌山県和歌山市","あり","地域"],["運輸業・郵便業","全日本空輸","ANA。国内線・国際線の航空輸送","東京都港区","あり","大手"],["運輸業・郵便業","西日本旅客鉄道","JR西日本。鉄道と駅ナカ・不動産事業","大阪府大阪市","あり","大手"],["運輸業・郵便業","日本郵政","郵便・銀行・保険を束ねる持株会社","東京都千代田区","あり","大手"],["運輸業・郵便業","日本通運","総合物流と国際輸送、重量品輸送","東京都千代田区","あり","大手"],["運輸業・郵便業","福山通運","特別積合せによる企業間輸送と物流","広島県福山市","あり","大手"],["運輸業・郵便業","JALグランドサービス","JALグループの空港での貨物・手荷物の取扱い","東京都大田区","限定的","大手"],["運輸業・郵便業","JALスカイ","JALグループの空港での旅客サービス","東京都大田区","限定的","大手"],["運輸業・郵便業","サカイ引越センター","引越サービスの最大手","大阪府堺市","あり","大手"],["運輸業・郵便業","センコー","化学・住宅建材に強い総合物流","東京都江東区","あり","大手"],["運輸業・郵便業","ヤマト運輸","宅急便を中心とする宅配便と企業向け物流","東京都中央区","あり","大手"],["運輸業・郵便業","上組","港湾運送と国際物流の最大手","兵庫県神戸市","あり","大手"],["運輸業・郵便業","佐川急便","飛脚宅配便と企業向けの物流サービス","京都府京都市","あり","大手"],["運輸業・郵便業","日本航空","国内最大級の航空会社。国内線・国際線","東京都品川区","あり","大手"],["運輸業・郵便業","日本貨物鉄道","JR貨物。鉄道による貨物輸送","東京都渋谷区","あり","大手"],["運輸業・郵便業","日本郵便","郵便・物流事業と全国の郵便局の窓口運営","東京都千代田区","あり","大手"],["運輸業・郵便業","東海旅客鉄道","JR東海。東海道新幹線と在来線の運営","愛知県名古屋市","限定的","大手"],["運輸業・郵便業","国際エキスプレス","国際航空貨物の輸送と通関手続き","東京都中央区","あり","中堅"],["運輸業・郵便業","サントリーロジスティクス","サントリー製品の物流と在庫管理","東京都港区","あり","中堅"],["運輸業・郵便業","ヒガシトゥエンティワン","物流・倉庫とオフィス移転、情報機器輸送","大阪府大阪市","あり","中堅"],["運輸業・郵便業","ANAウイングス","ANAグループの地域路線を担う航空会社","東京都大田区","限定的","中堅"],["運輸業・郵便業","ANAエアポートサービス","羽田空港でのグランドハンドリング","東京都大田区","なし","中堅"],["運輸業・郵便業","NX・NPロジスティクス","NIPPON EXPRESSグループの倉庫・配送","","あり","中堅"],["運輸業・郵便業","Peach・Aviation","関西国際空港を拠点とするLCC","大阪府泉佐野市","あり","中堅"],["運輸業・郵便業","スカイマーク","国内線を中心とする中堅の航空会社","東京都大田区","限定的","中堅"],["運輸業・郵便業","阪神電気鉄道","関西の鉄道と沿線のまちづくり","大阪府大阪市","あり","地域"],["運輸業・郵便業","ANA関西空港","関西国際空港での旅客サービスと地上支援","大阪府泉佐野市","あり","地域"],["運輸業・郵便業","ANA大阪空港","伊丹空港での旅客サービスと地上支援","大阪府豊中市","あり","地域"],["運輸業・郵便業","ANA沖縄空港","那覇空港での旅客サービスと地上支援","沖縄県那覇市","なし","地域"],["運輸業・郵便業","Kスカイ","関西エリアの空港での旅客サービス","大阪府泉佐野市","あり","地域"],["運輸業・郵便業","近畿日本鉄道","近鉄。関西・東海の鉄道と沿線開発","大阪府大阪市","あり","地域"],["運輸業・郵便業","JR西日本バス","高速バスと路線バスの運行","大阪府大阪市","あり","地域"],["運輸業・郵便業","ANA中部空港","中部国際空港での旅客・貨物の地上支援","愛知県常滑市","なし","地域"],["運輸業・郵便業","ANA成田エアポートサービス","成田空港でのグランドハンドリング","千葉県成田市","なし","地域"],["運輸業・郵便業","ANA新千歳空港","新千歳空港での旅客サービスと地上支援","北海道千歳市","なし","地域"],["運輸業・郵便業","JALスカイエアポート沖縄","那覇空港での旅客サービスと地上支援","沖縄県那覇市","なし","地域"],["運輸業・郵便業","フジトランスコーポレーション","港湾運送と国際物流。自動車輸送に強み","愛知県名古屋市","限定的","地域"],["運輸業・郵便業","京浜急行電鉄","首都圏の鉄道と沿線の不動産・流通","東京都港区","なし","地域"],["運輸業・郵便業","名古屋鉄道","中京圏の鉄道と交通・不動産・流通","愛知県名古屋市","なし","地域"],["運輸業・郵便業","四国旅客鉄道","JR四国。鉄道と関連事業","香川県高松市","なし","地域"],["運輸業・郵便業","大阪市高速電気軌道","Osaka Metroの運営と沿線事業","大阪府大阪市","あり","地域"],["運輸業・郵便業","西鉄物流","西日本鉄道グループの物流と倉庫","福岡県福岡市","限定的","地域"],["運輸業・郵便業","関西エアポートアビエーションサービス","関西・伊丹空港でのグランドハンドリング","大阪府泉佐野市","あり","地域"],["運輸業・郵便業","阪急電鉄","関西の鉄道と沿線のまちづくり","大阪府池田市","あり","地域"],["卸売業","アルフレッサ","医療用医薬品の卸売大手","東京都千代田区","あり","大手"],["卸売業","大塚商会","OA機器とITシステムの販売・保守","東京都千代田区","あり","大手"],["卸売業","リコージャパン","複合機とITソリューションの販売・保守","東京都港区","あり","大手"],["卸売業","トーホー","業務用食品の卸と食品スーパーの運営","兵庫県神戸市","あり","大手"],["卸売業","渡辺パイプ","配管材、住宅設備、農業資材の卸","東京都中央区","あり","大手"],["卸売業","キヤノンシステムアンドサポート","複合機とITの販売・保守（中小企業向け）","東京都港区","あり","大手"],["卸売業","メディセオ","医療用医薬品の卸売大手","東京都中央区","あり","大手"],["卸売業","カナデン","三菱電機製品を扱う電機系の専門商社","東京都中央区","あり","大手"],["卸売業","ケーエスケー","医療用医薬品の卸売","東京都世田谷区","限定的","大手"],["卸売業","スズケン","医療用医薬品の卸売大手","愛知県名古屋市","あり","大手"],["卸売業","三井物産流通グループ","食品・日用品の卸売と物流","東京都千代田区","あり","大手"],["卸売業","三菱食品","加工食品、酒類、菓子の総合卸","東京都文京区","あり","大手"],["卸売業","内田洋行","オフィス家具と教育・ICT環境の構築","東京都中央区","あり","大手"],["卸売業","加藤産業","食品・酒類・菓子の総合卸","兵庫県西宮市","あり","大手"],["卸売業","因幡電機産業","電設資材の卸売と空調部材の製造","大阪府大阪市","あり","大手"],["卸売業","富士フイルムメディカル","医療用画像機器と医療ITシステムの販売","東京都港区","あり","大手"],["卸売業","日本アクセス","伊藤忠系の食品総合卸。冷凍・チルドに強み","東京都品川区","あり","大手"],["卸売業","日本電商","","","あり","中堅"],["卸売業","江綿","繊維・アパレル素材の専門商社","大阪府大阪市","あり","中堅"],["卸売業","村中医療器","医療機器と医療材料の卸売","大阪府大阪市","あり","中堅"],["卸売業","幸南食糧","米穀の仕入れ、精米、販売","大阪府松原市","あり","中堅"],["卸売業","サンコーインダストリー","ねじ・ファスニング部品の専門商社","大阪府大阪市","あり","中堅"],["卸売業","山星屋","菓子の専門卸","大阪府大阪市","あり","中堅"],["卸売業","西原商会","業務用食品と厨房機器の卸","鹿児島県鹿児島市","あり","中堅"],["卸売業","エコートレーディング","日用品とペット用品の卸","兵庫県西宮市","あり","中堅"],["卸売業","三笑堂","医療機器と医療材料の卸","京都府京都市","あり","中堅"],["卸売業","小西医療器","医療機器と医療材料の卸","大阪府大阪市","あり","中堅"],["卸売業","サンセイテクノス","電子部品と産業機器の技術商社","大阪府大阪市","あり","中堅"],["卸売業","トヨタユーゼック","中古車オークションの運営と中古車流通の支援","東京都江東区","あり","中堅"],["卸売業","ナブコドア","自動ドアの販売、設置、メンテナンス","大阪府大阪市","あり","中堅"],["卸売業","ヤンマーエネルギーシステム","発電機、ガスヒートポンプの販売と保守","大阪府大阪市","あり","中堅"],["卸売業","ワキタ","建設機械のレンタル・販売と不動産、産業機械","大阪府大阪市","あり","中堅"],["卸売業","三菱電機トレーディング","三菱電機製品の国内販売と輸出入","東京都台東区","あり","中堅"],["卸売業","住商メタルワン鋼管","鋼管の販売と加工","東京都千代田区","あり","中堅"],["卸売業","大丸興業","機械、化成品、繊維を扱う専門商社","大阪府大阪市","あり","中堅"],["卸売業","大陽日酸ガス＆ウェルディング","産業ガスと溶接材料の販売","東京都品川区","あり","中堅"],["卸売業","奥村機械","工作機械と産業機械の販売","","あり","中堅"],["卸売業","宇仁繊維","テキスタイル（生地）の専門商社","大阪府大阪市","あり","中堅"],["卸売業","岡本無線電機","電子部品・電子機器の専門商社","大阪府大阪市","あり","中堅"],["卸売業","島津メディカルシステムズ","島津製作所の医用機器の販売と保守","","あり","中堅"],["卸売業","扶洋","化学品と合成樹脂の専門商社","大阪府大阪市","あり","中堅"],["卸売業","日伝","機械要素部品とメカトロ製品の専門商社","大阪府大阪市","あり","中堅"],["卸売業","日本ハムマーケティング","日本ハムグループの食肉・加工食品の販売","大阪府大阪市","あり","中堅"],["卸売業","横浜冷凍","冷蔵倉庫の運営と水産物・食品の卸売","神奈川県横浜市","あり","中堅"],["卸売業","瀧定名古屋","繊維・アパレル素材の専門商社","愛知県名古屋市","あり","中堅"],["卸売業","トヨタL&F近畿","フォークリフトと物流機器の販売・保守","大阪府大阪市","あり","地域"],["卸売業","ダイキンHVACソリューション近畿","ダイキン空調機器の販売と施工・保守","大阪府大阪市","あり","地域"],["卸売業","TOTO関西販売","TOTO製品の関西エリアでの販売","大阪府大阪市","あり","地域"],["卸売業","いすゞ自動車近畿","いすゞのトラック・バスの販売と整備","大阪府大阪市","あり","地域"],["卸売業","ジェイアール西日本商事","JR西日本グループの商社。鉄道資材と物販","大阪府大阪市","あり","地域"],["卸売業","伊丹産業","LPガス、石油製品、米穀の販売","兵庫県伊丹市","あり","地域"],["小売業","阪急阪神百貨店","阪急百貨店・阪神百貨店の運営","大阪府大阪市","あり","大手"],["小売業","ストライプインターナショナル","earth music&ecologyなどアパレルの企画・販売","岡山県岡山市","あり","大手"],["小売業","バロックジャパンリミテッド","MOUSSY、SLYなどアパレルの企画・販売","東京都渋谷区","あり","大手"],["小売業","ジュン","ロペピクニックなどアパレルの企画・販売","東京都渋谷区","あり","大手"],["小売業","エービーシー・マート","靴の小売チェーンの運営とシューズの企画","東京都渋谷区","あり","大手"],["小売業","オルビス","化粧品の通販と店舗販売","東京都品川区","あり","大手"],["小売業","ファーストリテイリング","ユニクロ・GUの企画から製造・販売まで一貫","山口県山口市","あり","大手"],["小売業","ジーユー","GUブランドの企画と店舗運営","東京都江東区","あり","大手"],["小売業","ルイ・ヴィトンジャパン","高級ブランド製品の日本での販売","東京都中央区","あり","大手"],["小売業","アダストリア","グローバルワークなどアパレルの企画・販売","東京都千代田区","あり","大手"],["小売業","ユナイテッドアローズ","セレクトショップの運営と自社企画商品の販売","東京都渋谷区","あり","大手"],["小売業","パルグループホールディングス","アパレルと生活雑貨の企画・販売","大阪府大阪市","あり","大手"],["小売業","しまむら","ファッションセンターしまむらなどの運営","埼玉県さいたま市","あり","大手"],["小売業","ポーラ","化粧品の企画と訪問販売・店舗販売","東京都品川区","あり","大手"],["小売業","スギ薬局","調剤を併設したドラッグストアの運営","愛知県大府市","あり","大手"],["小売業","コスモス薬品","ディスカウント型のドラッグストアの運営","福岡県福岡市","あり","大手"],["小売業","ビックカメラ","家電量販店の運営と通販","東京都豊島区","あり","大手"],["小売業","ヤマダデンキ","家電量販店の運営と住宅・リフォーム事業","群馬県高崎市","あり","大手"],["小売業","ヨドバシカメラ","家電量販店の運営と通販サイトの展開","東京都新宿区","あり","大手"],["小売業","サントリービバレッジソリューション","自動販売機の運営と法人向け飲料の提案","東京都港区","あり","大手"],["小売業","イオンリテール","総合スーパー「イオン」の運営","千葉県千葉市","あり","大手"],["小売業","ライフコーポレーション","食品スーパー「ライフ」の運営","大阪府大阪市","あり","大手"],["小売業","ロピア","精肉に強みを持つ食品スーパーの運営","神奈川県川崎市","あり","大手"],["小売業","Apple Japan","Appleの日本法人。直営店の運営と製品の販売・マーケティング","東京都港区","あり","大手"],["小売業","H&M JAPAN","スウェーデン発のファストファッション。店舗運営と販売","東京都渋谷区","あり","大手"],["小売業","アインホールディングス","調剤薬局アイン薬局、化粧品店アインズ&トルペを全国展開","北海道札幌市","あり","大手"],["小売業","イトーヨーカ堂","総合スーパー。食品を中心とした店舗運営","東京都千代田区","あり","大手"],["小売業","ウエルシア薬局","調剤併設型ドラッグストアを全国展開","東京都千代田区","あり","大手"],["小売業","クオール","調剤薬局クオール薬局の運営。医療モール併設型が中心","東京都港区","あり","大手"],["小売業","クスリのアオキ","北陸発のドラッグストア。食品強化型で西日本へ出店拡大","石川県白山市","あり","大手"],["小売業","コーナン商事","ホームセンター「コーナン」を関西中心に全国展開","大阪府堺市","あり","大手"],["小売業","サンドラッグ","ドラッグストアとディスカウントストアの運営","東京都府中市","あり","大手"],["小売業","セブン－イレブン・ジャパン","コンビニ本部。加盟店の経営指導と商品開発","東京都千代田区","あり","大手"],["小売業","ニトリ","家具・インテリア用品の企画から販売までを一貫展開","北海道札幌市","あり","大手"],["小売業","ベイクルーズ","JOURNAL STANDARD等を展開するアパレル小売","東京都渋谷区","あり","大手"],["小売業","マッシュホールディングス","SNIDEL等のアパレルとコスメbrandの企画・販売","東京都港区","あり","大手"],["小売業","メディカルシステムネットワーク","調剤薬局「なの花薬局」の運営と医薬品ネットワーク事業","北海道札幌市","あり","大手"],["小売業","ヤナセ","メルセデス・ベンツ等の輸入車の販売と整備","東京都港区","あり","大手"],["小売業","日本調剤","調剤薬局の運営、医薬品製造、人材紹介を展開","東京都千代田区","あり","大手"],["小売業","総合メディカル","調剤薬局「そうごう薬局」の運営と医業経営支援","福岡県福岡市","あり","大手"],["小売業","良品計画","「無印良品」の企画・開発から小売までを一貫展開","東京都文京区","あり","大手"],["小売業","ピーチ・ジョン","女性用下着の企画と通販・店舗販売","東京都渋谷区","あり","中堅"],["小売業","ナイスクラップ","レディースアパレルの企画と店舗販売","東京都渋谷区","あり","中堅"],["小売業","アズノゥアズ","レディースアパレルの企画と店舗販売","東京都渋谷区","あり","中堅"],["小売業","イング","レディースアパレルの企画と店舗販売","大阪府大阪市","あり","中堅"],["小売業","ヴァンドームヤマダ","ジュエリーの企画と店舗販売","東京都台東区","あり","中堅"],["小売業","ゴディバジャパン","チョコレートの製造と店舗・通販での販売","東京都港区","あり","中堅"],["小売業","タペストリー・ジャパン","コーチ、ケイト・スペードなどの日本での販売","東京都中央区","あり","中堅"],["小売業","ツツミ","宝飾品の企画・製造・小売。全国に直営店を展開","東京都立川市","あり","中堅"],["小売業","ディーゼルジャパン","イタリア発アパレルブランドの日本での販売","東京都渋谷区","あり","中堅"],["小売業","マルジェラジャパン","メゾン マルジェラの日本での販売","東京都港区","あり","中堅"],["小売業","ラルフローレン","米国発ファッションブランドの日本での販売","東京都港区","あり","中堅"],["小売業","ロクシタンジャポン","フランス発の化粧品ブランドの日本での販売","東京都渋谷区","あり","中堅"],["小売業","マナベインテリアハーツ","家具・インテリアの小売","大阪府堺市","あり","地域"],["小売業","トヨタユナイテッド奈良","トヨタ車の販売店。新車・中古車と整備","奈良県奈良市","あり","地域"],["小売業","ホンダプリモ大阪南","ホンダ車の販売店。新車・中古車と整備","大阪府","あり","地域"],["小売業","大阪トヨタ自動車","トヨタ車の販売店。新車・中古車と整備","大阪府大阪市","あり","地域"],["小売業","ホンダモビリティ近畿","ホンダ車の販売店。新車・中古車と整備","大阪府","あり","地域"],["小売業","生活協同組合コープこうべ","兵庫・大阪の生協。店舗運営と宅配事業","兵庫県神戸市","あり","地域"],["小売業","タカラ通商","美容室向け商材の卸と、カー用品・車販売を手がける","大阪府大阪市","あり","地域"],["小売業","ネッツトヨタゾナ神戸","トヨタ車の販売店。新車・中古車販売と点検整備","兵庫県神戸市","あり","地域"],["小売業","マルアイ","兵庫県を地盤とする食品スーパー","兵庫県姫路市","あり","地域"],["小売業","万代","大阪・兵庫を地盤とする食品スーパー","大阪府東大阪市","あり","地域"],["小売業","上新電機","家電量販店「ジョーシン」を関西中心に展開","大阪府大阪市","あり","地域"],["小売業","兵庫日産自動車","日産車の販売店。新車・中古車販売と点検整備","兵庫県神戸市","あり","地域"],["小売業","大阪トヨペット","トヨタ車の販売店。大阪府内に店舗を展開","大阪府大阪市","あり","地域"],["小売業","神戸トヨペット","トヨタ車の販売店。兵庫県内に店舗を展開","兵庫県神戸市","あり","地域"],["金融業・保険業","かんぽ生命保険","郵便局を窓口とする生命保険","東京都千代田区","あり","大手"],["金融業・保険業","明治安田生命保険","生命保険。個人・団体向けの保障","東京都千代田区","あり","大手"],["金融業・保険業","SMBCコンシューマーファイナンス","プロミスブランドの消費者向け融資と保証","東京都江東区","あり","大手"],["金融業・保険業","あいおいニッセイ同和損害保険","自動車保険を中心とした損害保険","東京都渋谷区","あり","大手"],["金融業・保険業","みずほ証券","みずほグループの総合証券","東京都千代田区","あり","大手"],["金融業・保険業","ゆうちょ銀行","郵便貯金を引き継ぐ銀行。全国の郵便局で展開","東京都千代田区","あり","大手"],["金融業・保険業","りそな銀行","大阪発祥の都市銀行。個人・中小企業取引に強み","大阪府大阪市","あり","大手"],["金融業・保険業","ジブラルタ生命保険","教職員・法人市場に強い生命保険","東京都千代田区","あり","大手"],["金融業・保険業","ジャックス","クレジットカードと信販、オートローン","東京都渋谷区","あり","大手"],["金融業・保険業","住友生命保険","大阪発祥の生命保険。個人・法人向け保障","大阪府大阪市","あり","大手"],["金融業・保険業","大和証券グループ","大手総合証券。リテールとホールセール","東京都千代田区","あり","大手"],["金融業・保険業","岡三証券","全国に店舗を持つ対面型の総合証券","東京都中央区","あり","大手"],["金融業・保険業","日本生命保険","国内最大級の生命保険。個人・法人向け保障","大阪府大阪市","あり","大手"],["金融業・保険業","東海東京証券","名古屋発祥の総合証券","愛知県名古屋市","あり","大手"],["金融業・保険業","野村證券","国内最大手の総合証券","東京都中央区","あり","大手"],["金融業・保険業","丸三証券","対面営業を軸とする中堅の証券","東京都中央区","あり","中堅"],["金融業・保険業","いちよし証券","中小型の成長株に強みを持つ証券","東京都中央区","あり","中堅"],["金融業・保険業","イオン銀行","イオングループの流通系銀行","東京都江東区","あり","中堅"],["金融業・保険業","大同信用組合","大阪府を地盤とする信用組合","大阪府大阪市","あり","地域"],["金融業・保険業","大阪中河内農業協同組合","東大阪エリアのJA。信用・共済・営農指導","大阪府東大阪市","あり","地域"],["金融業・保険業","堺市農業協同組合","堺市のJA。信用・共済・営農指導","大阪府堺市","あり","地域"],["金融業・保険業","大阪南農業協同組合","大阪府南部のJA。信用・共済・営農指導","大阪府富田林市","あり","地域"],["金融業・保険業","いずみの農業協同組合","和泉エリアのJA。信用・共済・営農指導","大阪府和泉市","あり","地域"],["金融業・保険業","大阪泉州農業協同組合","泉州エリアのJA。信用・共済・営農指導","大阪府岸和田市","あり","地域"],["金融業・保険業","わかやま農業協同組合","和歌山市エリアのJA。信用・共済・営農指導","和歌山県和歌山市","あり","地域"],["金融業・保険業","紀陽銀行","和歌山県を地盤とする地方銀行","和歌山県和歌山市","あり","地域"],["金融業・保険業","南都銀行","奈良県を地盤とする地方銀行","奈良県奈良市","あり","地域"],["金融業・保険業","北陸銀行","富山県を地盤とする地方銀行","富山県富山市","限定的","地域"],["金融業・保険業","近畿労働金庫","近畿の労働組合員向けの金融機関","大阪府大阪市","あり","地域"],["金融業・保険業","大阪信用金庫","大阪府を地盤とする信用金庫","大阪府大阪市","あり","地域"],["金融業・保険業","大阪シティ信用金庫","大阪市を地盤とする信用金庫","大阪府大阪市","あり","地域"],["金融業・保険業","岩井コスモ証券","大阪発祥の証券。対面とネット取引","大阪府大阪市","あり","地域"],["金融業・保険業","きのくに信用金庫","和歌山県を地盤とする信用金庫","和歌山県和歌山市","あり","地域"],["金融業・保険業","のぞみ信用組合","大阪府を地盤とする信用組合","大阪府大阪市","あり","地域"],["金融業・保険業","みなと銀行","兵庫県を地盤とする地方銀行。りそなグループ","兵庫県神戸市","あり","地域"],["金融業・保険業","トマト銀行","岡山県を地盤とする第二地方銀行","岡山県岡山市","限定的","地域"],["金融業・保険業","京都中央信用金庫","京都府を地盤とする信用金庫。全国有数の規模","京都府京都市","あり","地域"],["金融業・保険業","京都銀行","京都府を地盤とする地方銀行","京都府京都市","あり","地域"],["金融業・保険業","但陽信用金庫","兵庫県加古川市を地盤とする信用金庫","兵庫県加古川市","あり","地域"],["金融業・保険業","但馬銀行","兵庫県北部を地盤とする地方銀行","兵庫県豊岡市","あり","地域"],["金融業・保険業","兵庫信用金庫","兵庫県姫路市を地盤とする信用金庫","兵庫県姫路市","あり","地域"],["金融業・保険業","北おおさか信用金庫","大阪府北部を地盤とする信用金庫","大阪府池田市","あり","地域"],["金融業・保険業","和歌山県農業協同組合","和歌山県のJA。信用・共済・営農指導","和歌山県和歌山市","あり","地域"],["金融業・保険業","四国銀行","高知県を地盤とする地方銀行","高知県高知市","限定的","地域"],["金融業・保険業","奈良中央信用金庫","奈良県を地盤とする信用金庫","奈良県大和高田市","あり","地域"],["金融業・保険業","姫路信用金庫","兵庫県姫路市を地盤とする信用金庫","兵庫県姫路市","あり","地域"],["金融業・保険業","尼崎信用金庫","兵庫県尼崎市を地盤とする信用金庫","兵庫県尼崎市","あり","地域"],["金融業・保険業","山陰合同銀行","島根・鳥取を地盤とする地方銀行","島根県松江市","限定的","地域"],["金融業・保険業","広島銀行","広島県を地盤とする地方銀行","広島県広島市","限定的","地域"],["金融業・保険業","徳島大正銀行","徳島県と大阪を地盤とする地方銀行","徳島県徳島市","あり","地域"],["金融業・保険業","愛媛銀行","愛媛県を地盤とする第二地方銀行","愛媛県松山市","限定的","地域"],["金融業・保険業","成協信用組合","大阪府を地盤とする信用組合","大阪府大阪市","あり","地域"],["金融業・保険業","播州信用金庫","兵庫県姫路市を地盤とする信用金庫","兵庫県姫路市","あり","地域"],["金融業・保険業","日新信用金庫","兵庫県神戸市を地盤とする信用金庫","兵庫県神戸市","あり","地域"],["金融業・保険業","東京シティ信用金庫","東京都を地盤とする信用金庫","東京都中央区","なし","地域"],["金融業・保険業","池田泉州銀行","大阪府北部を地盤とする地方銀行","大阪府大阪市","あり","地域"],["金融業・保険業","百十四銀行","香川県を地盤とする地方銀行","香川県高松市","限定的","地域"],["金融業・保険業","神戸信用金庫","兵庫県神戸市を地盤とする信用金庫","兵庫県神戸市","あり","地域"],["金融業・保険業","近畿産業信用組合","大阪を拠点に近畿一円で展開する信用組合","大阪府大阪市","あり","地域"],["金融業・保険業","関西みらい銀行","大阪府を地盤とする地方銀行。りそなグループ","大阪府大阪市","あり","地域"],["金融業・保険業","阿波銀行","徳島県を地盤とする地方銀行","徳島県徳島市","限定的","地域"],["金融業・保険業","香川銀行","香川県を地盤とする第二地方銀行","香川県高松市","限定的","地域"],["建設業・不動産業","タマホーム","ローコスト注文住宅の設計・施工・販売","東京都港区","あり","大手"],["建設業・不動産業","大東建託","賃貸住宅の建築請負と一括借上げ、管理","東京都港区","あり","大手"],["建設業・不動産業","NIPPO","道路舗装の最大手。アスファルト合材の製造と道路工事","東京都中央区","あり","大手"],["建設業・不動産業","きんでん","関西電力系の電気設備工事。屋内配線から送配電まで","大阪府大阪市","あり","大手"],["建設業・不動産業","パナソニックホームズ","戸建・賃貸住宅の設計、施工、販売","大阪府豊中市","あり","大手"],["建設業・不動産業","一条工務店","高気密高断熱を特長とする注文住宅の設計・施工","東京都江東区","あり","大手"],["建設業・不動産業","三井住友建設","土木と建築の総合建設。橋梁とマンションに強み","東京都中央区","あり","大手"],["建設業・不動産業","中電工","中国電力系の電気設備工事と情報通信工事","広島県広島市","限定的","大手"],["建設業・不動産業","五洋建設","海洋土木に強い総合建設。港湾工事の最大手","東京都文京区","あり","大手"],["建設業・不動産業","住友不動産販売","不動産の売買仲介と賃貸。ステップブランドで展開","東京都新宿区","あり","大手"],["建設業・不動産業","住友林業","木造注文住宅の設計・施工と、木材建材の流通","東京都千代田区","あり","大手"],["建設業・不動産業","前田建設工業","土木と建築の総合建設。インフラ運営事業も展開","東京都千代田区","あり","大手"],["建設業・不動産業","前田道路","道路舗装とアスファルト合材の製造","東京都品川区","あり","大手"],["建設業・不動産業","大和ハウス工業","戸建・賃貸住宅、商業施設、物流施設の開発","大阪府大阪市","あり","大手"],["建設業・不動産業","大成建設","スーパーゼネコン。大規模建築と土木","東京都新宿区","あり","大手"],["建設業・不動産業","大林組","スーパーゼネコン。大阪発祥で建築・土木とも強い","東京都港区","あり","大手"],["建設業・不動産業","奥村組","大阪発祥の総合建設。免震・耐震技術に強み","大阪府大阪市","あり","大手"],["建設業・不動産業","戸田建設","総合建設。病院・学校など建築分野に強み","東京都中央区","あり","大手"],["建設業・不動産業","日本道路","道路舗装とアスファルト合材の製造","東京都港区","あり","大手"],["建設業・不動産業","旭化成ホームズ","ヘーベルハウスの設計、施工、販売と賃貸管理","東京都千代田区","あり","大手"],["建設業・不動産業","東亜建設工業","港湾・海洋土木に強い総合建設","東京都新宿区","あり","大手"],["建設業・不動産業","東急リバブル","不動産の売買仲介と新築マンションの販売受託","東京都渋谷区","あり","大手"],["建設業・不動産業","清水建設","スーパーゼネコン。建築を中心に土木・エンジニアリング","東京都中央区","あり","大手"],["建設業・不動産業","熊谷組","総合建設。ダム・トンネルなど土木に強み","東京都新宿区","あり","大手"],["建設業・不動産業","積水ハウス","戸建・賃貸住宅の設計施工と、まちづくり開発","大阪府大阪市","あり","大手"],["建設業・不動産業","竹中工務店","大阪発祥のスーパーゼネコン。建築専業","大阪府大阪市","あり","大手"],["建設業・不動産業","西松建設","総合建設。土木・建築とインフラ運営","東京都港区","あり","大手"],["建設業・不動産業","鉄建建設","鉄道関連工事に強い総合建設","東京都千代田区","あり","大手"],["建設業・不動産業","長谷工コーポレーション","分譲マンションの設計・施工の最大手","東京都港区","あり","大手"],["建設業・不動産業","鹿島道路","道路舗装とアスファルト合材の製造","東京都文京区","あり","大手"],["建設業・不動産業","髙松建設","大阪発祥の総合建設。マンション建築に強み","大阪府大阪市","あり","中堅"],["建設業・不動産業","みずほ不動産販売","みずほ銀行系の不動産の売買仲介","東京都中央区","あり","中堅"],["建設業・不動産業","セキスイハイム不動産","積水化学グループの不動産仲介と賃貸管理","","あり","中堅"],["建設業・不動産業","パナソニック防災システムズ","防災・消防システムの設計、施工、保守","","あり","中堅"],["建設業・不動産業","三井住友トラスト不動産","三井住友信託銀行系の不動産の売買仲介","東京都千代田区","あり","中堅"],["建設業・不動産業","三菱UFJ不動産販売","三菱UFJ銀行系の不動産の売買仲介","東京都千代田区","あり","中堅"],["建設業・不動産業","住友不動産ステップ","住友不動産グループの不動産の売買仲介","東京都新宿区","あり","中堅"],["建設業・不動産業","住友林業アーキテクノ","住友林業グループの住宅部材の製造と施工","","あり","中堅"],["建設業・不動産業","住友林業ホームサービス","住友林業グループの不動産の売買仲介","東京都新宿区","あり","中堅"],["建設業・不動産業","住友林業ホームテック","戸建住宅のリフォーム・リノベーション","東京都千代田区","あり","中堅"],["建設業・不動産業","東亜道路工業","道路舗装とアスファルト乳剤の製造","東京都港区","あり","中堅"],["建設業・不動産業","近鉄不動産","近鉄グループの不動産開発、分譲、仲介","大阪府大阪市","あり","地域"],["建設業・不動産業","JR西日本SC開発","JR西日本の駅ビル・ショッピングセンターの開発と運営","大阪府大阪市","あり","地域"],["建設業・不動産業","JR西日本電気システム","鉄道の電気設備の設計・施工・保守","大阪府大阪市","あり","地域"],["建設業・不動産業","セキスイハイム近畿","セキスイハイムの住宅の販売と施工（近畿エリア）","大阪府大阪市","あり","地域"],["建設業・不動産業","パナソニックホームズ不動産","不動産の仲介と賃貸管理","大阪府豊中市","あり","地域"],["建設業・不動産業","明星工業","プラントの断熱・保温工事と関連設備の施工","大阪府大阪市","あり","地域"],["建設業・不動産業","積水ハウス不動産","積水ハウスグループの不動産仲介と賃貸管理","大阪府大阪市","あり","地域"],["建設業・不動産業","西日本高速道路ファシリティーズ","高速道路の施設・設備の保全と管理","大阪府大阪市","あり","地域"],["建設業・不動産業","近畿不動産","不動産の売買仲介と賃貸","","あり","地域"],["建設業・不動産業","錢高組","大阪発祥の総合建設。土木・建築","大阪府大阪市","あり","地域"],["サービス","吉本興業ホールディングス","お笑い芸能事務所の運営と番組・劇場事業","大阪府大阪市","あり","大手"],["サービス","ユー・エス・ジェイ","ユニバーサル・スタジオ・ジャパンの運営","大阪府大阪市","あり","大手"],["サービス","エイチ・アイ・エス","旅行の企画・手配とテーマパーク事業","東京都新宿区","あり","大手"],["サービス","ALSOK","常駐警備、機械警備、綜合的なセキュリティ","東京都港区","あり","大手"],["サービス","日立ビルシステム","エレベーター・エスカレーターの保守と改修","東京都千代田区","あり","大手"],["サービス","ディップ","バイトルなどの求人情報サービスとDX支援","東京都港区","あり","大手"],["サービス","ダスキン","清掃用具のレンタルとミスタードーナツの運営","大阪府吹田市","あり","大手"],["サービス","西尾レントオール","建設機械とイベント用品の総合レンタル","大阪府大阪市","あり","大手"],["サービス","星野リゾート","星のや、界などのホテル・旅館の運営","長野県軽井沢町","あり","大手"],["サービス","リゾートトラスト","会員制リゾートホテルの運営と会員権販売","愛知県名古屋市","あり","大手"],["サービス","帝国ホテル","東京・大阪などのシティホテルの運営","東京都千代田区","あり","大手"],["サービス","ヒルトン・ワールドワイド","外資系ホテルチェーンの運営","東京都新宿区","あり","大手"],["サービス","テイクアンドギヴ・ニーズ","ゲストハウス型の結婚式場の運営","東京都品川区","あり","大手"],["サービス","トリドールホールディングス","丸亀製麺などの飲食チェーンの運営","兵庫県神戸市","あり","大手"],["サービス","スターバックスコーヒージャパン","スターバックス店舗の運営","東京都品川区","あり","大手"],["サービス","タリーズコーヒージャパン","タリーズコーヒー店舗の運営","東京都新宿区","あり","大手"],["サービス","コナミスポーツ","フィットネスクラブとスクールの運営","東京都中央区","あり","大手"],["サービス","ECC","英会話スクールと語学教育、学習塾の運営","大阪府大阪市","あり","大手"],["サービス","JTB","旅行の企画・手配と法人向けの出張・イベント支援","東京都品川区","あり","大手"],["サービス","KNT-CTホールディングス","近畿日本ツーリストとクラブツーリズムの持株会社","東京都新宿区","あり","大手"],["サービス","LITALICO","発達障害のある子ども向け教室と就労支援","東京都目黒区","あり","大手"],["サービス","SOMPOケア","介護付きホームと在宅介護サービスの運営","東京都品川区","あり","大手"],["サービス","アデコ","人材派遣と人材紹介、アウトソーシング","東京都千代田区","あり","大手"],["サービス","アパホテル","全国展開のビジネスホテルチェーンの運営","東京都港区","あり","大手"],["サービス","イオンディライト","商業施設の設備管理と清掃、警備","大阪府大阪市","あり","大手"],["サービス","エームサービス","社員食堂や病院給食など給食サービスの受託","東京都港区","あり","大手"],["サービス","スタジオアリス","こども写真館の運営","大阪府大阪市","あり","大手"],["サービス","ベネッセスタイルケア","介護付きホームと高齢者向け住宅の運営","東京都多摩市","あり","大手"],["サービス","マイナビ","就職・転職の情報サービスと人材紹介","東京都千代田区","あり","大手"],["サービス","共立メンテナンス","ドーミーインなどのホテルと学生寮の運営","東京都千代田区","あり","大手"],["サービス","日本旅行","旅行の企画・手配と地域交流ビジネス","東京都中央区","あり","大手"],["サービス","日本管財","ビルの総合管理と不動産の運営管理","兵庫県西宮市","あり","大手"],["サービス","東武トップツアーズ","旅行の企画・手配と自治体向けの事業受託","東京都墨田区","あり","大手"],["サービス","船井総合研究所","中堅・中小企業向けの経営コンサルティング","大阪府大阪市","あり","大手"],["サービス","関西電力","関西エリアの電力の販売とエネルギー・情報通信","大阪府大阪市","あり","大手"],["サービス","阪急交通社","トラピックスなどの旅行の企画と販売","大阪府大阪市","あり","大手"],["サービス","エム・ユー・センターサービス大阪","三菱UFJ銀行グループの事務業務の受託","大阪府大阪市","あり","中堅"],["サービス","クボタ機械設計","クボタ製品の設計受託と技術サービス","大阪府大阪市","あり","中堅"],["サービス","LIXIL Advanced Showroom","LIXIL製品のショールーム運営と接客","東京都江東区","あり","中堅"],["サービス","伊藤忠アーバンコミュニティ","マンションとビルの管理・運営","東京都中央区","あり","中堅"],["サービス","内田洋行ビジネスエキスパート","内田洋行グループの事務・物流の受託","東京都中央区","あり","中堅"],["サービス","学情","新卒・若手向けの就職情報サービスと人材紹介","大阪府大阪市","あり","中堅"],["サービス","レント","建設機械のレンタルと販売","愛知県名古屋市","あり","中堅"],["サービス","フォーシーズンズ","外資系ラグジュアリーホテルの運営","東京都","あり","中堅"],["サービス","さなる","佐鳴予備校の運営と教育コンテンツの提供","静岡県浜松市","限定的","中堅"],["サービス","アールイズ・ウエディング","リゾートウエディングの企画と運営","東京都渋谷区","限定的","中堅"],["サービス","インソース","企業向けの社員研修の企画と実施","東京都千代田区","あり","中堅"],["サービス","オムロンフィールドエンジニアリング","駅務機器やATMなど社会システムの保守","東京都新宿区","あり","中堅"],["サービス","オリックス・ホテルマネジメント","オリックスグループのホテル・旅館の運営","東京都港区","あり","中堅"],["サービス","キズキ","不登校・中退者向けの個別指導塾と就労支援","東京都新宿区","あり","中堅"],["サービス","ハウステンボス","長崎県のテーマパークの運営","長崎県佐世保市","なし","中堅"],["サービス","バルニバービ","カフェ・レストランの運営と地域開発","大阪府大阪市","あり","中堅"],["サービス","フジモトHD","藤本製薬グループの持株会社。医薬品と健康食品","大阪府松原市","あり","中堅"],["サービス","名鉄観光サービス","名鉄グループの旅行の企画と手配","愛知県名古屋市","あり","中堅"],["サービス","明治安田オフィスパートナーズ","明治安田生命グループの事務業務の受託","東京都千代田区","あり","中堅"],["サービス","読売旅行","読売新聞グループの旅行の企画と販売","東京都中央区","あり","中堅"],["サービス","ロイヤルホテル","リーガロイヤルホテルの運営","大阪府大阪市","あり","地域"],["サービス","トヨタレンタリース大阪","レンタカーとカーリースの提供","大阪府大阪市","あり","地域"],["サービス","阪急阪神ビルマネジメント","阪急阪神グループのビルの管理と運営","大阪府大阪市","あり","地域"],["サービス","アド近鉄","近鉄グループの広告代理店。交通広告に強み","大阪府大阪市","あり","地域"],["サービス","キョウエイアドインターナショナル","総合広告代理店。屋外広告と販促","大阪府大阪市","あり","地域"],["サービス","近鉄・都ホテルズ","都ホテルズ＆リゾーツの運営","大阪府大阪市","あり","地域"],["サービス","ウェスティンホテル大阪","大阪のシティホテルの運営","大阪府大阪市","あり","地域"],["サービス","ホテルオークラ神戸","神戸のシティホテルの運営","兵庫県神戸市","あり","地域"],["サービス","三機サービス","空調・給排水設備のメンテナンスと工事","兵庫県西宮市","あり","地域"],["サービス","四国電力","四国エリアの電力の販売とエネルギー事業","香川県高松市","なし","地域"],["サービス","大阪ガスネットワーク","近畿圏のガス導管網の建設と保安・供給","大阪府大阪市","あり","地域"],["サービス","大阪ガスビジネスクリエイト","大阪ガスグループの事務・人事・経理のBPO","大阪府大阪市","あり","地域"],["サービス","東洋テック","関西を地盤とする警備と機械警備","大阪府大阪市","あり","地域"],["サービス","神戸ポートピアホテル","神戸ポートアイランドのシティホテルの運営","兵庫県神戸市","あり","地域"],["サービス","福井県民生活協同組合","福井県の生協。店舗と宅配の運営","福井県福井市","なし","地域"],["サービス","関西電力送配電","関西エリアの送配電設備の建設と保守","大阪府大阪市","あり","地域"],["公務・医療・教育・団体（参考／業種分類外）","三重県庁","三重県の行政事務全般","三重県津市","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","中部矯正管区","中部地方の刑事施設を統括する法務省の機関","愛知県名古屋市","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","京都地方裁判所","京都府を管轄する裁判所の事務","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","京都大学医学部附属病院","京都大学の附属病院。診療と医学研究","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","京都工場保健会","健康診断と産業保健サービスの提供","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","京都市消防局","京都市の消防・救急・防災","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","京都府庁","京都府の行政事務全般","京都府京都市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","八尾市役所","大阪府八尾市の行政事務全般","大阪府八尾市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫医科大学","医科大学と附属病院を運営する学校法人","兵庫県西宮市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫県商工会連合会","兵庫県内の商工会の指導と中小企業支援","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫県庁病院局","兵庫県立病院の運営と管理","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫県教育委員会","兵庫県の学校教育と生涯学習の行政","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","兵庫県警察本部","兵庫県の警察事務と治安維持","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","出入国在留管理庁","出入国管理と在留資格に関する法務省の機関","東京都千代田区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","医誠会","大阪を中心に病院・クリニックを運営する医療法人","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","名張市役所","三重県名張市の行政事務全般","三重県名張市","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","和歌山県庁","和歌山県の行政事務全般","和歌山県和歌山市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","和歌山県福祉事業団","和歌山県の福祉施設の運営","和歌山県和歌山市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","四万十町役場","高知県四万十町の行政事務全般","高知県四万十町","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","国立病院機構","全国の国立病院を運営する独立行政法人","東京都目黒区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","地域医療機能推進機構","JCHO。全国の病院・介護施設を運営","東京都港区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","堺市役所","大阪府堺市の行政事務全般","大阪府堺市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大東市役所","大阪府大東市の行政事務全般","大阪府大東市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大西脳神経外科病院","兵庫県明石市の脳神経外科を中心とした病院","兵庫県明石市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪労働局","大阪府の労働行政とハローワークの統括","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪回生病院","大阪市淀川区の総合病院","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪国税局","近畿2府4県の国税の賦課と徴収","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪地方裁判所","大阪府を管轄する裁判所の事務","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪市役所","大阪市の行政事務全般","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪市消防局","大阪市の消防・救急・防災","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪府国民健康保険団体連合会","国民健康保険の診療報酬の審査と支払い","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪府庁","大阪府の行政事務全般","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪府歯科保険医協会","歯科医師の保険診療に関する団体","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪府警察本部","大阪府の警察事務と治安維持","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","大阪狭山市役所","大阪府大阪狭山市の行政事務全般","大阪府大阪狭山市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","太子町役場","兵庫県太子町の行政事務全般","兵庫県太子町","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","姫路市役所","兵庫県姫路市の行政事務全般","兵庫県姫路市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","尼崎中央リハビリテーション病院","兵庫県尼崎市の回復期リハビリテーション病院","兵庫県尼崎市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","山口県商工会連合会","山口県内の商工会の指導と中小企業支援","山口県山口市","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","常翔学園","大阪工業大学、摂南大学などを運営する学校法人","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","日本モーターボート競走会","競艇（ボートレース）の実施と運営","東京都港区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","日本下水道事業団","地方公共団体の下水道施設の建設と技術支援","東京都文京区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","日本中小企業福祉事業財団","中小企業向けの福利厚生制度の提供","東京都千代田区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","日本年金機構","公的年金の記録管理、保険料徴収、給付","東京都杉並区","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","東京消防庁","東京都の消防・救急・防災","東京都千代田区","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","松原市役所","大阪府松原市の行政事務全般","大阪府松原市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","泉陽会","大阪を拠点に福祉施設を運営する社会福祉法人","大阪府","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","生長会","大阪府堺市を拠点とする病院・福祉施設の運営","大阪府堺市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","神戸地方検察庁","兵庫県を管轄する検察庁の事務","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","神戸市役所","神戸市の行政事務全般","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","神戸市教育委員会","神戸市の学校教育と生涯学習の行政","兵庫県神戸市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","若弘会","大阪府東大阪市を拠点とする病院・介護施設の運営","大阪府東大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","警視庁","東京都の警察事務と治安維持","東京都千代田区","なし","－"],["公務・医療・教育・団体（参考／業種分類外）","近畿矯正管区","近畿地方の刑事施設を統括する法務省の機関","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","近畿財務局","近畿の財政・金融行政と国有財産の管理","大阪府大阪市","あり","－"],["公務・医療・教育・団体（参考／業種分類外）","高知県庁","高知県の行政事務全般","高知県高知市","なし","－"]];
+const COMP_EXCLUDE=["公務・医療・教育・団体（参考／業種分類外）"];
+const COMP_JOBMAP={"seikan": {"c": ["製造業"], "k": []}, "kobai": {"c": ["製造業", "卸売業"], "k": []}, "hinshitsu": {"c": ["製造業"], "k": []}, "butsuryu": {"c": ["運輸業・郵便業", "卸売業"], "k": ["物流", "倉庫", "輸送", "配送", "冷蔵"]}, "seizo": {"c": ["製造業"], "k": ["製造", "食品", "飲料", "菓子", "パン"]}, "seizojimu": {"c": ["製造業", "卸売業"], "k": []}, "boeki": {"c": ["卸売業", "運輸業・郵便業"], "k": ["商社", "国際", "輸", "通関", "港湾", "繊維"]}, "genka": {"c": ["製造業"], "k": []}, "kojinji": {"c": ["製造業"], "k": []}};
+const COMP_GYOMAP={"食品・飲料": ["製造業", "食品"], "医薬品・化粧品": ["製造業", "薬"], "自動車・輸送機器": ["製造業", "自動車"], "電機・電子部品": ["製造業", "電子"], "機械・産業機器": ["製造業", "機械"], "化学・素材": ["製造業", "化学"], "鉄鋼・金属": ["製造業", "鋼"], "建材・住宅設備": ["製造業", "建材"], "日用品・トイレタリー": ["製造業", "日用"], "衣料・繊維": ["製造業", "ウェア"], "印刷・紙・包装": ["製造業", "紙"]};
+const COMP_LIST=COMPANIES.filter(c=>!COMP_EXCLUDE.includes(c[0]));
+const COMP_CATS=[...new Set(COMP_LIST.map(c=>c[0]))];
+const COMP_SIZES=["大手","中堅","地域"].filter(s=>COMP_LIST.some(c=>c[5]===s))
+  .concat(COMP_LIST.some(c=>c[5]==="－")?["その他"]:[]);
+const SZCLASS={"大手":"s-ote","中堅":"s-chu","地域":"s-chi","－":"s-non"};
+const COMP_LABEL=s=>String(s).replace("（参考／業種分類外）","");
+const compEsc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+let compCat="all",compSize="all",compQ="",compShown=20;
+
+function compChips(el,items,cur,onPick){
+  el.querySelectorAll(".comp-chip").forEach(b=>b.remove());
+  [{k:"all",l:"すべて"},...items.map(x=>({k:x,l:COMP_LABEL(x)}))].forEach(o=>{
+    const b=document.createElement("button");
+    b.className="comp-chip";b.textContent=o.l;
+    b.setAttribute("aria-pressed",String(o.k===cur));
+    b.addEventListener("click",()=>onPick(o.k));
+    el.appendChild(b);
+  });
+}
+function drawCat(){compChips(document.getElementById("compCat"),COMP_CATS,compCat,k=>{compCat=k;drawCat();compReset();});}
+function drawSz(){compChips(document.getElementById("compSize"),COMP_SIZES,compSize,k=>{compSize=k;drawSz();compReset();});}
+function compFiltered(){
+  const q=compQ.trim().toLowerCase();
+  return COMP_LIST.filter(c=>{
+    if(compCat!=="all"&&c[0]!==compCat)return false;
+    if(compSize!=="all"&&c[5]!==(compSize==="その他"?"－":compSize))return false;
+    if(q&&!(c[1]+c[2]+c[3]).toLowerCase().includes(q))return false;
+    return true;
+  });
+}
+function compRender(){
+  const list=compFiltered(),view=list.slice(0,compShown);
+  document.getElementById("compCount").innerHTML=
+    list.length?`<b>${list.length}</b> 社が該当（${view.length}社を表示中）`:"";
+  document.getElementById("compGrid").innerHTML= list.length? view.map(c=>`
+    <article class="comp-card">
+      <h4>${compEsc(c[1])}</h4>
+      <div class="comp-badges"><span class="cb-cat">${compEsc(COMP_LABEL(c[0]))}</span><span class="${SZCLASS[c[5]]||"s-non"}">${compEsc(c[5]==="－"?"その他":c[5])}</span></div>
+      ${c[2]?`<p class="comp-biz">${compEsc(c[2])}</p>`:""}
+      <p class="comp-meta">${c[3]?"本社："+compEsc(c[3]):""}${c[3]&&c[4]?" ／ ":""}${c[4]?"関西勤務地："+compEsc(c[4]):""}</p>
+    </article>`).join("")
+    : `<div class="comp-empty">この条件に当てはまる企業はありません。業種や規模の絞り込みを外すか、検索語を短くしてみてください。</div>`;
+  const more=document.getElementById("compMore");
+  more.style.display=list.length>view.length?"":"none";
+  more.textContent=`さらに${Math.min(20,list.length-view.length)}社見る`;
+}
+function compReset(){compShown=20;compRender();}
+function compApplyFilter(cat,q){
+  compCat=COMP_CATS.includes(cat)?cat:"all";compSize="all";compQ=q||"";
+  document.getElementById("compQ").value=compQ;
+  drawCat();drawSz();compReset();
+  document.getElementById("kigyo").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function compPick(spec,n,offset){
+  const cats=(spec&&spec.c)||[],kw=(spec&&spec.k)||[];
+  let pool=cats.length
+    ? COMP_LIST.filter(c=>cats.includes(c[0]))
+    : COMP_CATS.flatMap(cat=>{const g=COMP_LIST.filter(c=>c[0]===cat);return g.length?[g[0],g[g.length-1]]:[];});
+  if(kw.length){
+    const hit=pool.filter(c=>kw.some(k=>(c[1]+c[2]).includes(k)));
+    if(hit.length>=1)pool=hit;
+  }
+  const groups=["大手","中堅","地域","－"].map(sz=>{
+    const g=pool.filter(c=>c[5]===sz);
+    if(!g.length||!offset)return g;
+    const o=offset%g.length;return g.slice(o).concat(g.slice(0,o));
+  });
+  const out=[];let i=0;
+  while(out.length<n&&groups.some(g=>g.length)){
+    const g=groups[i%groups.length];
+    if(g.length)out.push(g.shift());
+    i++;
+  }
+  return out;
+}
+function compMiniHTML(spec,n,offset){
+  const picks=compPick(spec,n,offset),cats=(spec&&spec.c)||[];
+  if(!picks.length)return "";
+  const one=(cats.length===1)?cats[0]:"all";
+  const label=one==="all"?"企業一覧をすべて見る":compEsc(COMP_LABEL(one))+"の企業をすべて見る";
+  return `<div class="blk">
+    <h5>▍どんな会社で、この仕事ができるか</h5>
+    <div class="comp-mini">${picks.map(c=>`<span class="cm"><b>${compEsc(c[1])}</b><i>${compEsc(c[5]==="－"?"その他":c[5])}</i></span>`).join("")}</div>
+    <p class="comp-caution">同じ会社でも、工場によって扱う製品も勤務時間も変わります。気になった会社は、求人票で「配属される工場はどこか」と「交代勤務の有無・年間休日」を必ず確かめてください。　<a href="#check">求人票チェックリスト →</a></p>
+    <p class="comp-inline-link"><a href="#kigyo" data-compcat="${compEsc(one)}">${label} →</a></p>
+  </div>`;
+}
+const COMP_OFFSET={};
+Object.keys(COMP_JOBMAP).forEach((id,i)=>{COMP_OFFSET[id]=i*5;});
+function compAttachJobs(){
+  Object.keys(COMP_JOBMAP).forEach(id=>{
+    const art=document.getElementById("job-"+id);if(!art)return;
+    const col=art.querySelector(".job-body .split > div");if(!col)return;
+    col.insertAdjacentHTML("beforeend",compMiniHTML(COMP_JOBMAP[id],6,COMP_OFFSET[id]));
+  });
+}
+function compAttachGyokai(){
+  document.querySelectorAll("#gyoBody td.gyoname").forEach(td=>{
+    const name=(td.childNodes[0]&&td.childNodes[0].textContent||"").trim();
+    const m=COMP_GYOMAP[name];if(!m)return;
+    const [cat,q]=m;
+    const n=COMP_LIST.filter(c=>(cat==="all"||c[0]===cat)&&(!q||(c[1]+c[2]+c[3]).includes(q))).length;
+    if(!n)return;
+    td.insertAdjacentHTML("beforeend",
+      `<br><a class="gyo-link" href="#kigyo" data-compcat="${compEsc(cat)}" data-compq="${compEsc(q)}">この業種の企業 ${n}社 →</a>`);
+  });
+}
+document.addEventListener("click",e=>{
+  const a=e.target.closest("[data-compcat]");
+  if(!a)return;
+  e.preventDefault();
+  compApplyFilter(a.getAttribute("data-compcat"),a.getAttribute("data-compq")||"");
+});
+document.getElementById("compQ").addEventListener("input",e=>{compQ=e.target.value;compReset();});
+document.getElementById("compMore").addEventListener("click",()=>{compShown+=20;compRender();});
+document.getElementById("calcBtn").addEventListener("click",()=>{
+  document.querySelectorAll("#result .rescard").forEach(card=>{
+    if(card.querySelector(".comp-res"))return;
+    const a=card.querySelector('a[href^="#job-"]');if(!a)return;
+    const id=a.getAttribute("href").replace("#job-","");
+    if(!(id in COMP_JOBMAP))return;
+    const spec=COMP_JOBMAP[id],cats=spec.c||[],picks=compPick(spec,3,COMP_OFFSET[id]);
+    if(!picks.length)return;
+    const one=(cats.length===1)?cats[0]:"all";
+    card.insertAdjacentHTML("beforeend",
+      `<p class="comp-res">こんな会社にある仕事です：${picks.map(c=>compEsc(c[1])).join("、")}　<a href="#kigyo" data-compcat="${compEsc(one)}">企業を見る →</a></p>`);
+  });
+});
+drawCat();drawSz();compRender();compAttachJobs();compAttachGyokai();
+
+</script>
+</body>
+</html>
